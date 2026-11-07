@@ -26,9 +26,12 @@ An **optional AI fallback** (Gnani's open-weight Evon, self-hosted) can be asked
 - The translated turn is ready about one to two seconds after the speaker stops. It is **not streaming**.
 - Every number in `README.md` and `SUBMISSION.md` is generated from the saved result files in `out/`, and a test fails if the documents drift from the data.
 
-## Honest limits
+## Next steps
 
-It covers landmarks and a few set directions only. Prisma can mishear a word under (simulated) bike noise, and the rules then refuse rather than guess. The Kannada wording was drafted without a native-speaker review (`kannada_review.md` lists every string for one). The AI check cannot catch a misheard transcript or every change of meaning. No rider or delivery company has been asked whether they want this.
+- A native Kannada speaker reviews every Kannada string (`kannada_review.md` lists them all).
+- Trial with real riders and customers once real-data rules allow it.
+- Streaming translation, so the other person hears it while the speaker is still talking.
+- More directions and landmark types in the tables, and the optional AI fallback for casual sentences.
 
 ## Run it
 
