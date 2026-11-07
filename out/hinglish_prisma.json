@@ -1,0 +1,258 @@
+[
+ {
+  "said": "bhaiya seedhe aa jao right le lo phir samne building dikhegi wahan ruko main aa raha hoon",
+  "hi-IN": {
+   "heard": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी, वहाँ रुको मैं आ रहा हूँ।",
+   "status": "translated",
+   "english": "come straight, turn right, you will see a building ahead, wait there, I am coming",
+   "clauses": [
+    "STRAIGHT",
+    "TURN",
+    "SEE_AHEAD",
+    "WAIT",
+    "COMING"
+   ],
+   "not": []
+  },
+  "en-IN": {
+   "heard": "bhaiya sidhe aa jao right le lo phir samne building dikhegi vahaan ruko mein aa raha hoon",
+   "status": "partial",
+   "english": "come straight, turn right, you will see a building ahead, wait, I am coming",
+   "clauses": [
+    "STRAIGHT",
+    "TURN",
+    "SEE_AHEAD",
+    "WAIT",
+    "COMING"
+   ],
+   "not": [
+    "vahaan"
+   ]
+  }
+ },
+ {
+  "said": "straight aa jao phir right turn kar lo",
+  "hi-IN": {
+   "heard": "स्ट्रेट आ जाओ फिर राइट टर्न कर लो।",
+   "status": "partial",
+   "english": "turn right",
+   "clauses": [
+    "TURN"
+   ],
+   "not": [
+    "स्ट्रेट",
+    "जाओ",
+    "टर्न",
+    "कर"
+   ]
+  },
+  "en-IN": {
+   "heard": "straight aa jao phir right turn kar lo",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [
+    "TURN"
+   ],
+   "not": []
+  }
+ },
+ {
+  "said": "wait karo main aa raha hu",
+  "hi-IN": {
+   "heard": "वेट करो मैं आरो",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": [
+    "वेट",
+    "करो",
+    "आरो"
+   ]
+  },
+  "en-IN": {
+   "heard": "wait karo mein aaro",
+   "status": "partial",
+   "english": "wait",
+   "clauses": [
+    "WAIT"
+   ],
+   "not": [
+    "karo",
+    "aaro"
+   ]
+  }
+ },
+ {
+  "said": "left side mud jao",
+  "hi-IN": {
+   "heard": "लेफ्ट साइड मत जाओ।",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": [
+    "लेफ्ट",
+    "साइड",
+    "मत",
+    "जाओ"
+   ]
+  },
+  "en-IN": {
+   "heard": "left side mudja",
+   "status": "partial",
+   "english": "on the left",
+   "clauses": [],
+   "not": [
+    "mudja"
+   ]
+  }
+ },
+ {
+  "said": "pehle left lo phir right lo",
+  "hi-IN": {
+   "heard": "पहले लेफ्ट लो फिर राइट लो।",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": []
+  },
+  "en-IN": {
+   "heard": "pahle left lo phir right lo",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": []
+  }
+ },
+ {
+  "said": "building dikhne par right le lo",
+  "hi-IN": {
+   "heard": "बिल्डिंग दिखने पर राइट ले लो।",
+   "status": "partial",
+   "english": "turn right",
+   "clauses": [
+    "TURN"
+   ],
+   "not": [
+    "दिखने"
+   ]
+  },
+  "en-IN": {
+   "heard": "building dikhne per right le lo",
+   "status": "partial",
+   "english": "turn right",
+   "clauses": [
+    "TURN"
+   ],
+   "not": [
+    "dikhne",
+    "per"
+   ]
+  }
+ },
+ {
+  "said": "bhaiya second gate right side wala",
+  "hi-IN": {
+   "heard": "भैया सेकंड गेट राइट साइड वाला।",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": [
+    "सेकंड",
+    "राइट",
+    "साइड"
+   ]
+  },
+  "en-IN": {
+   "heard": "bhaiya second gate right side vaala",
+   "status": "partial",
+   "english": "second gate on the right",
+   "clauses": [],
+   "not": [
+    "vaala"
+   ]
+  }
+ },
+ {
+  "said": "go straight and take a right",
+  "hi-IN": {
+   "heard": "गो स्ट्रेट एन्ड टेक ए राइट।",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": [
+    "गो",
+    "स्ट्रेट",
+    "एन्ड",
+    "टेक",
+    "राइट"
+   ]
+  },
+  "en-IN": {
+   "heard": "go straight and take a right",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [],
+   "not": [
+    "go",
+    "and",
+    "take"
+   ]
+  }
+ },
+ {
+  "said": "dusre signal se left le lo",
+  "hi-IN": {
+   "heard": "दूसरे सिग्नल से लेफ्ट ले लो।",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [
+    "TURN"
+   ],
+   "not": []
+  },
+  "en-IN": {
+   "heard": "doosre signal left le lo",
+   "status": "untranslated",
+   "english": "",
+   "clauses": [
+    "TURN"
+   ],
+   "not": []
+  }
+ },
+ {
+  "said": "aap wahan wait kijiye main five minute mein aa raha hoon",
+  "hi-IN": {
+   "heard": "आप वहाँ वेट कीजिए मैं फाइव मिनट में आ रहा हूँ।",
+   "status": "partial",
+   "english": "I am coming",
+   "clauses": [
+    "COMING"
+   ],
+   "not": [
+    "आप",
+    "वहां",
+    "वेट",
+    "कीजिए",
+    "फाइव",
+    "मिनट"
+   ]
+  },
+  "en-IN": {
+   "heard": "aap vahaan wait kijiye mein five minute mein aa raha hoon",
+   "status": "partial",
+   "english": "wait, I am coming",
+   "clauses": [
+    "WAIT",
+    "COMING"
+   ],
+   "not": [
+    "aap",
+    "vahaan",
+    "kijiye",
+    "five",
+    "minute"
+   ]
+  }
+ }
+]

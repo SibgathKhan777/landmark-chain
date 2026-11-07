@@ -1,0 +1,84 @@
+{
+ "people": {
+  "customer": {
+   "lang": "hi-IN",
+   "voice": "Deepak",
+   "label": "Customer",
+   "language": "Hindi",
+   "line": "phone line, 20 dB noise",
+   "person": "Arun"
+  },
+  "biker": {
+   "lang": "kn-IN",
+   "voice": "Kavin",
+   "label": "Biker",
+   "language": "Kannada",
+   "line": "bike noise, 5 dB",
+   "person": "Manju"
+  }
+ },
+ "interpreter": {
+  "hi-IN": "Nalini",
+  "kn-IN": "Saanvi",
+  "en": "Yashvi"
+ },
+ "biker_snr": 5,
+ "turns": [
+  {
+   "n": 1,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "सर वहाँ रुकिए, मैं आ रहा हूँ",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "सर वहाँ रुकिए मैं आ रहा हूँ",
+   "status": "translated",
+   "output": "ಅಲ್ಲಿ ನಿಲ್ಲಿ, ನಾನು ಬರುತ್ತಿದ್ದೇನೆ",
+   "english": "wait there, I am coming",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "WAIT",
+    "COMING"
+   ],
+   "intents": [],
+   "rules_status": "translated",
+   "coverage": 1.0,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "ಅಲ್ಲಿ ನಿಲ್ಲಿ, ನಾನು ಬರುತ್ತಿದ್ದೇನೆ",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 1.76,
+   "ms": {
+    "stt": 265,
+    "rules": 0.56,
+    "tts": 460,
+    "total": 725
+   },
+   "audio_s": 1.76,
+   "audio_level": {
+    "peak_pct": 100.0,
+    "rms_dbfs": -14.6,
+    "clipped_pct": 0.01
+   }
+  }
+ ],
+ "errors": [],
+ "latency": {
+  "turns": 1,
+  "median_ms": 725,
+  "min_ms": 725,
+  "max_ms": 725
+ },
+ "calls": {
+  "tts": 2,
+  "stt": 1
+ },
+ "ai_fallback": false
+}

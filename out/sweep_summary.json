@@ -1,0 +1,113 @@
+{
+ "all": {
+  "clean": {
+   "n": 20,
+   "exact_%": 95,
+   "wer_%": 1,
+   "keywords_%": 99,
+   "ident_%": 100
+  },
+  "20dB": {
+   "n": 20,
+   "exact_%": 95,
+   "wer_%": 1,
+   "keywords_%": 99,
+   "ident_%": 100
+  },
+  "10dB": {
+   "n": 20,
+   "exact_%": 75,
+   "wer_%": 5,
+   "keywords_%": 95,
+   "ident_%": 100
+  },
+  "5dB": {
+   "n": 20,
+   "exact_%": 60,
+   "wer_%": 11,
+   "keywords_%": 89,
+   "ident_%": 100
+  },
+  "0dB": {
+   "n": 20,
+   "exact_%": 30,
+   "wer_%": 25,
+   "keywords_%": 68,
+   "ident_%": 100
+  }
+ },
+ "hi-IN": {
+  "clean": {
+   "n": 10,
+   "exact_%": 100,
+   "wer_%": 0,
+   "keywords_%": 100,
+   "ident_%": 100
+  },
+  "20dB": {
+   "n": 10,
+   "exact_%": 100,
+   "wer_%": 0,
+   "keywords_%": 100,
+   "ident_%": 100
+  },
+  "10dB": {
+   "n": 10,
+   "exact_%": 80,
+   "wer_%": 3,
+   "keywords_%": 98,
+   "ident_%": 100
+  },
+  "5dB": {
+   "n": 10,
+   "exact_%": 80,
+   "wer_%": 5,
+   "keywords_%": 97,
+   "ident_%": 100
+  },
+  "0dB": {
+   "n": 10,
+   "exact_%": 30,
+   "wer_%": 19,
+   "keywords_%": 68,
+   "ident_%": 100
+  }
+ },
+ "mr-IN": {
+  "clean": {
+   "n": 10,
+   "exact_%": 90,
+   "wer_%": 2,
+   "keywords_%": 98,
+   "ident_%": 100
+  },
+  "20dB": {
+   "n": 10,
+   "exact_%": 90,
+   "wer_%": 2,
+   "keywords_%": 98,
+   "ident_%": 100
+  },
+  "10dB": {
+   "n": 10,
+   "exact_%": 70,
+   "wer_%": 8,
+   "keywords_%": 92,
+   "ident_%": 100
+  },
+  "5dB": {
+   "n": 10,
+   "exact_%": 40,
+   "wer_%": 18,
+   "keywords_%": 81,
+   "ident_%": 100
+  },
+  "0dB": {
+   "n": 10,
+   "exact_%": 30,
+   "wer_%": 31,
+   "keywords_%": 69,
+   "ident_%": 100
+  }
+ }
+}

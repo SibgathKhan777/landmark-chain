@@ -1,0 +1,124 @@
+[{"stream_name":"stdout","time":0.677741074,"data":"$ nvidia-smi --query-gpu=name,memory.total --format=csv; free -g | head -2; nvcc --version | tail -2; cmake --version | head -1\n"}
+,{"stream_name":"stdout","time":1.235569039,"data":"name, memory.total [MiB]\n"}
+,{"stream_name":"stdout","time":1.235588344,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.235592747,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.235596113,"data":"               total        used        free      shared  buff/cache   available\n"}
+,{"stream_name":"stdout","time":1.235599443,"data":"Mem:              31           1          26           0           4          30\n"}
+,{"stream_name":"stdout","time":1.235602834,"data":"Cuda compilation tools, release 12.8, V12.8.93\n"}
+,{"stream_name":"stdout","time":1.235606187,"data":"Build cuda_12.8.r12.8/compiler.35583870_0\n"}
+,{"stream_name":"stdout","time":1.235610105,"data":"cmake version 3.31.10\n"}
+,{"stream_name":"stdout","time":1.235688612,"data":"$ curl -sSL -o /tmp/work/llama-b11934-bin-ubuntu-cuda-12.8-x64.tar.gz https://github.com/ggml-org/llama.cpp/releases/download/b11934/llama-b11934-bin-ubuntu-cuda-12.8-x64.tar.gz \u0026\u0026 tar -xzf /tmp/work/llama-b11934-bin-ubuntu-cuda-12.8-x64.tar.gz -C /tmp/work/llama\n"}
+,{"stream_name":"stdout","time":3.979938093,"data":"\n"}
+,{"stream_name":"stdout","time":3.979957441,"data":"$ curl -sSL -o /tmp/work/cudart-llama-b11934-bin-ubuntu-cuda-12.8-x64.tar.gz https://github.com/ggml-org/llama.cpp/releases/download/b11934/cudart-llama-b11934-bin-ubuntu-cuda-12.8-x64.tar.gz \u0026\u0026 tar -xzf /tmp/work/cudart-llama-b11934-bin-ubuntu-cuda-12.8-x64.tar.gz -C /tmp/work/llama\n"}
+,{"stream_name":"stdout","time":14.373631751,"data":"\n"}
+,{"stream_name":"stdout","time":14.378491931,"data":"llama-server at /tmp/work/llama/llama-b11934/llama-server, ready in 13 s\n"}
+,{"stream_name":"stdout","time":14.378512363,"data":"$ ldd /tmp/work/llama/llama-b11934/llama-server | grep -i 'not found' ; /tmp/work/llama/llama-b11934/llama-server --version 2\u003e\u00261 | tail -3\n"}
+,{"stream_name":"stdout","time":14.404332674,"data":"version: 0.7.0-dev (build 11934, commit 8542e9435)\n"}
+,{"stream_name":"stdout","time":14.40434966,"data":"built with GNU 13.3.0 for Linux x86_64\n"}
+,{"stream_name":"stdout","time":14.404354615,"data":"$ pip install -q -U huggingface_hub\n"}
+,{"stream_name":"stdout","time":19.62670009,"data":"gradio-client 2.6.1 requires huggingface-hub\u003c2.0,\u003e=0.19.3, but you have huggingface-hub 2.3.0 which is incompatible.\n"}
+,{"stream_name":"stdout","time":19.626732098,"data":"tokenizers 0.23.1 requires huggingface-hub\u003c2.0,\u003e=0.16.4, but you have huggingface-hub 2.3.0 which is incompatible.\n"}
+,{"stream_name":"stdout","time":150.630052928,"data":"model file: gnani-evon-v3.3-30B-A3B-Q5_K_M.gguf (26.2 GB)\n"}
+,{"stream_name":"stdout","time":320.708965016,"data":"server ready after 301 s with gnani-evon-v3.3-30B-A3B-Q5_K_M.gguf\n"}
+,{"stream_name":"stdout","time":320.709520526,"data":"$ grep -i -E 'offloaded|model buffer|model size' /kaggle/working/llama-server.log | head -8\n"}
+,{"stream_name":"stdout","time":320.721653983,"data":"\n"}
+,{"stream_name":"stdout","time":320.721678421,"data":"warm-up call (not counted) ...\n"}
+,{"stream_name":"stdout","time":387.675529639,"data":"सामने बिल्डिंग नंबर सिक्स सेवन नाइन है मेरा और आप सीधे देखो ब्लू कलर का बंदा दिखेगा ब्लू कलर का टी शर्ट दिखेगा वहाँ पे आ जाना\n"}
+,{"stream_name":"stdout","time":387.675581504,"data":"  English               1.93 s : The building number is six seven nine in front. Look straight, you'll see a man wearing blue color shirt; come there.\n"}
+,{"stream_name":"stdout","time":387.675596951,"data":"  Kannada_direct        1.91 s : ಮುಂದೆ ಕಟ್ಟಡ ಸಂಖ್ಯೆ 679 ಇದೆ, ನನ್ನದು. ನೀಲಿ ಬಣ್ಣದ ಅಂಗಿ ಧರಿಸಿರುವ ವ್ಯಕ್ತಿಯನ್ನು ನೇರವಾಗಿ ನೋಡಿ ಅಲ್ಲಿ ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":387.675600716,"data":"  Kannada_via_English   3.77 s : ಕಟ್ಟಡ ಸಂಖ್ಯೆ ಆರು ಏಳು ಒಂಬತ್ತು ಮುಂದೆ ಇದೆ. ನೇರವಾಗಿ ನೋಡಿ, ನೀಲಿ ಬಣ್ಣದ ಅಂಗಿ ಧರಿಸಿರುವ ವ್ಯಕ್ತಿಯನ್ನು ಕಾಣುತ್ತೀರಿ; ಅಲ್ಲಿಗೆ ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":387.675604166,"data":"\n"}
+,{"stream_name":"stdout","time":390.543877444,"data":"भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ\n"}
+,{"stream_name":"stdout","time":390.543914184,"data":"  English               0.94 s : Brother, come straight and take the right turn. Then you'll see a building ahead; stay there until I arrive.\n"}
+,{"stream_name":"stdout","time":390.543917634,"data":"  Kannada_direct        0.96 s : ಭಯ್ಯಾ, ನೇರವಾಗಿ ಬನ್ನಿ ಮತ್ತು ಬಲಕ್ಕೆ ತಿರುಗಿ. ನಂತರ ಎದುರಿಗೆ ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ ಅಲ್ಲಿ ನಿಲ್ಸಿ ನಾನು ಬರುತ್ತಿದ್ದೇನೆ.\n"}
+,{"stream_name":"stdout","time":390.543921148,"data":"  Kannada_via_English   1.91 s : ಅಣ್ಣಾ, ನೇರವಾಗಿ ಬನ್ನಿ ಮತ್ತು ಬಲಕ್ಕೆ ತಿರುಗಿ. ನಂತರ ಮುಂದೆ ಒಂದು ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ; ನಾನು ಬರುವವರೆಗೆ ಅಲ್ಲಿಯೇ ಇರಿ.\n"}
+,{"stream_name":"stdout","time":390.543924452,"data":"\n"}
+,{"stream_name":"stdout","time":392.57296477,"data":"भैया चाय पीकर आना\n"}
+,{"stream_name":"stdout","time":392.572996689,"data":"  English                0.6 s : Brother, come back after drinking tea.\n"}
+,{"stream_name":"stdout","time":392.573008506,"data":"  Kannada_direct        0.67 s : ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":392.573012925,"data":"  Kannada_via_English   1.36 s : ಅಣ್ಣಾ, ಚಹಾ ಕುಡಿದ ನಂತರ ಹಿಂತಿರುಗಿ ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":392.573017153,"data":"\n"}
+,{"stream_name":"stdout","time":394.438813065,"data":"building dikhne par right le lo\n"}
+,{"stream_name":"stdout","time":394.43884605,"data":"  English               0.61 s : When you see the building, turn right.\n"}
+,{"stream_name":"stdout","time":394.438850876,"data":"  Kannada_direct        0.62 s : ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಬಲಕ್ಕೆ ತಿರುಗಿ.\n"}
+,{"stream_name":"stdout","time":394.438856016,"data":"  Kannada_via_English   1.25 s : ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಬಲಕ್ಕೆ ತಿರುಗಿ.\n"}
+,{"stream_name":"stdout","time":394.438860127,"data":"\n"}
+,{"stream_name":"stdout","time":396.346507642,"data":"agar building dikhe to wahan ruko\n"}
+,{"stream_name":"stdout","time":396.346538757,"data":"  English               0.65 s : If you see a building, then stop there.\n"}
+,{"stream_name":"stdout","time":396.346543382,"data":"  Kannada_direct         0.6 s : ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಅಲ್ಲಿ ನಿಲ್ಲಿ.\n"}
+,{"stream_name":"stdout","time":396.346563582,"data":"  Kannada_via_English   1.31 s : ನೀವು ಒಂದು ಕಟ್ಟಡವನ್ನು ನೋಡಿದರೆ, ಅಲ್ಲಿ ನಿಲ್ಲಿ.\n"}
+,{"stream_name":"stdout","time":396.346568375,"data":"\n"}
+,{"stream_name":"stdout","time":398.110208215,"data":"driver seedha aa raha hai\n"}
+,{"stream_name":"stdout","time":398.110230738,"data":"  English               0.56 s : The driver is coming straight.\n"}
+,{"stream_name":"stdout","time":398.11023523,"data":"  Kannada_direct        0.59 s : ಚಾಲಕ ನೇರವಾಗಿ ಬರುತ್ತಿದ್ದಾನೆ.\n"}
+,{"stream_name":"stdout","time":398.110239623,"data":"  Kannada_via_English   1.17 s : ಚಾಲಕನು ನೇರವಾಗಿ ಬರುತ್ತಿದ್ದಾನೆ.\n"}
+,{"stream_name":"stdout","time":398.110245172,"data":"\n"}
+,{"stream_name":"stdout","time":399.826432786,"data":"क्या मैं सीधे आ जाऊं\n"}
+,{"stream_name":"stdout","time":399.826483793,"data":"  English               0.55 s : Can I come straight?\n"}
+,{"stream_name":"stdout","time":399.826489268,"data":"  Kannada_direct        0.59 s : ನೇರವಾಗಿ ಬರಬಹುದೇ?\n"}
+,{"stream_name":"stdout","time":399.826493712,"data":"  Kannada_via_English   1.13 s : ನೇರವಾಗಿ ಬರಬಹುದೇ?\n"}
+,{"stream_name":"stdout","time":399.82649761,"data":"\n"}
+,{"stream_name":"stdout","time":401.772031696,"data":"right mat lena seedha aao\n"}
+,{"stream_name":"stdout","time":401.772061961,"data":"  English               0.61 s : Turn right no, come straight.\n"}
+,{"stream_name":"stdout","time":401.772066284,"data":"  Kannada_direct        0.67 s : ಬಲಕ್ಕೆ ತಿರುಗಿ ಬೇಡ, ನೇರವಾಗಿ ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":401.772072012,"data":"  Kannada_via_English   1.27 s : ಬಲಕ್ಕೆ ತಿರುಗಬೇಡ, ನೇರವಾಗಿ ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":401.772077003,"data":"\n"}
+,{"stream_name":"stdout","time":403.642716939,"data":"दो गली बाद राइट ले लो\n"}
+,{"stream_name":"stdout","time":403.642748426,"data":"  English               0.56 s : Turn right after two lanes.\n"}
+,{"stream_name":"stdout","time":403.642752822,"data":"  Kannada_direct        0.65 s : ಎರಡು ಗಲ್ಲಿಯ ನಂತರ ಬಲಕ್ಕೆ ತಿರುಗಿ.\n"}
+,{"stream_name":"stdout","time":403.642758592,"data":"  Kannada_via_English   1.22 s : ಎರಡು ಲೇನ್‌ಗಳ ನಂತರ ಬಲಕ್ಕೆ ತಿರುಗಿ.\n"}
+,{"stream_name":"stdout","time":403.642765322,"data":"\n"}
+,{"stream_name":"stdout","time":405.723230809,"data":"आप वहाँ वेट कीजिए मैं फाइव मिनट में आ रहा हूँ\n"}
+,{"stream_name":"stdout","time":405.723280054,"data":"  English               0.69 s : You wait there; I'll be back in five minutes.\n"}
+,{"stream_name":"stdout","time":405.723286216,"data":"  Kannada_direct        0.68 s : ನೀವು ಅಲ್ಲಿ ಕಾಯಿರಿ ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತೇನೆ.\n"}
+,{"stream_name":"stdout","time":405.723290954,"data":"  Kannada_via_English   1.39 s : ನೀವು ಅಲ್ಲಿಯೇ ಕಾಯಿರಿ; ನಾನು ಐದು ನಿಮಿಷಗಳಲ್ಲಿ ಬರುತ್ತೇನೆ.\n"}
+,{"stream_name":"stdout","time":405.723295922,"data":"\n"}
+,{"stream_name":"stdout","time":408.153470933,"data":"bhaiya second gate right side wala, uske upar blue board hai\n"}
+,{"stream_name":"stdout","time":408.153498799,"data":"  English               0.82 s : Brother, the one on the left at the second gate has a blue board above it.\n"}
+,{"stream_name":"stdout","time":408.153522992,"data":"  Kannada_direct        0.83 s : ಅಣ್ಣಾ ಎರಡನೇ ಗೇಟ್ ಬಲಬದಿಯಲ್ಲಿದೆ, ಅದರ ಮೇಲೆ ನೀಲಿ ಬೋರ್ಡ್ ಇದೆ.\n"}
+,{"stream_name":"stdout","time":408.153527028,"data":"  Kannada_via_English    1.6 s : ಅಣ್ಣಾ, ಎಡಕ್ಕೆ ಇರುವ ಎರಡನೇ ಗೇಟ್‌ನಲ್ಲಿ ನೀಲಿ ಬೋರ್ಡ್ ಇದೆ.\n"}
+,{"stream_name":"stdout","time":408.153530017,"data":"\n"}
+,{"stream_name":"stdout","time":410.07686237,"data":"ye mera number nahi hai, dusra number try karo\n"}
+,{"stream_name":"stdout","time":410.076888935,"data":"  English               0.64 s : This is not my number; try another one.\n"}
+,{"stream_name":"stdout","time":410.076893756,"data":"  Kannada_direct        0.66 s : ಇದು ನನ್ನ ಸಂಖ್ಯೆ ಅಲ್ಲ, ಇನ್ನೊಂದು ಸಂಖ್ಯೆಯನ್ನು ಪ್ರಯತ್ನಿಸಿ.\n"}
+,{"stream_name":"stdout","time":410.076901025,"data":"  Kannada_via_English   1.27 s : ಇದು ನನ್ನ ಸಂಖ್ಯೆ ಅಲ್ಲ; ಇನ್ನೊಂದು ಪ್ರಯತ್ನಿಸಿ.\n"}
+,{"stream_name":"stdout","time":410.076908604,"data":"\n"}
+,{"stream_name":"stdout","time":412.038912829,"data":"NEW jab tak gate na dikhe seedha aao\n"}
+,{"stream_name":"stdout","time":412.038941337,"data":"  English               0.62 s : Come straight until you see the gate.\n"}
+,{"stream_name":"stdout","time":412.038951246,"data":"  Kannada_direct        0.66 s : ಗೇಟ್ ಕಾಣುವವರೆಗೆ ನೇರವಾಗಿ ಬನ್ನಿ.\n"}
+,{"stream_name":"stdout","time":412.038954698,"data":"  Kannada_via_English    1.3 s : ನೇರವಾಗಿ ಬನ್ನಿ ಗೇಟ್ ಕಾಣುವವರೆಗೆ.\n"}
+,{"stream_name":"stdout","time":412.03895744,"data":"\n"}
+,{"stream_name":"stdout","time":413.975522335,"data":"NEW left mat lo seedha jao\n"}
+,{"stream_name":"stdout","time":413.975559022,"data":"  English               0.59 s : Turn left no, go straight.\n"}
+,{"stream_name":"stdout","time":413.975563864,"data":"  Kannada_direct        0.67 s : ಎಡಕ್ಕೆ ತಿರುಗಬೇಡ, ನೇರವಾಗಿ ಹೋಗು.\n"}
+,{"stream_name":"stdout","time":413.975568935,"data":"  Kannada_via_English   1.26 s : ಎಡಕ್ಕೆ ತಿರುಗಬೇಡ, ನೇರವಾಗಿ ಹೋಗು.\n"}
+,{"stream_name":"stdout","time":413.975573164,"data":"\n"}
+,{"stream_name":"stdout","time":415.776867853,"data":"NEW kya yahan ruk jaun\n"}
+,{"stream_name":"stdout","time":415.776897761,"data":"  English               0.57 s : Shall I stop here?\n"}
+,{"stream_name":"stdout","time":415.776902063,"data":"  Kannada_direct        0.64 s : ಈ ಸ್ಥಳದಲ್ಲಿ ನಾನು ನಿಲ್ಬೇಕು ಅಂತೀರಾ?\n"}
+,{"stream_name":"stdout","time":415.776907013,"data":"  Kannada_via_English   1.16 s : ನಾನು ಇಲ್ಲಿಗೆ ನಿಲ್ಬೇಕಾ?\n"}
+,{"stream_name":"stdout","time":415.776911028,"data":"\n"}
+,{"stream_name":"stdout","time":417.762658424,"data":"NEW do gali baad building ke samne ruko\n"}
+,{"stream_name":"stdout","time":417.762684242,"data":"  English               0.61 s : Stop at the building after that lane.\n"}
+,{"stream_name":"stdout","time":417.762688493,"data":"  Kannada_direct        0.66 s : ಗಲ್ಲಿಯ ನಂತರದ ಕಟ್ಟಡದ ಎದುರು ನಿಲ್ಲಿ.\n"}
+,{"stream_name":"stdout","time":417.76269492,"data":"  Kannada_via_English   1.32 s : ಅದರ ನಂತರದ ಲೇನ್‌ನಲ್ಲಿರುವ ಕಟ್ಟಡದಲ್ಲಿ ನಿಲುಗಡೆ ಮಾಡಿ.\n"}
+,{"stream_name":"stdout","time":417.762748064,"data":"\n"}
+,{"stream_name":"stdout","time":419.547580105,"data":"NEW wo banda blue shirt mein hai\n"}
+,{"stream_name":"stdout","time":419.547613378,"data":"  English               0.59 s : That guy in the blue shirt is there.\n"}
+,{"stream_name":"stdout","time":419.54761759,"data":"  Kannada_direct        0.59 s : ಅವನು ನೀಲಿ ಅಂಗಿ ಧರಿಸಿದ್ದಾನೆ.\n"}
+,{"stream_name":"stdout","time":419.547621766,"data":"  Kannada_via_English   1.19 s : ನೀಲಿ ಅಂಗಿಯವನು ಅಲ್ಲಿ ಇದ್ದಾನೆ.\n"}
+,{"stream_name":"stdout","time":419.547624876,"data":"\n"}
+,{"stream_name":"stdout","time":421.789553384,"data":"NEW bhaiya bahut traffic hai thoda late ho jaunga\n"}
+,{"stream_name":"stdout","time":421.789592144,"data":"  English               0.76 s : Brother, there is a lot of traffic; I will be slightly delayed.\n"}
+,{"stream_name":"stdout","time":421.789598938,"data":"  Kannada_direct         0.7 s : ಅಣ್ಣಾ ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ ತಡವಾಗುತ್ತೇನೆ.\n"}
+,{"stream_name":"stdout","time":421.789606941,"data":"  Kannada_via_English   1.54 s : ಅಣ್ಣಾ, ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ; ನಾನು ಸ್ವಲ್ಪ ತಡವಾಗುತ್ತೇನೆ.\n"}
+,{"stream_name":"stdout","time":421.789613564,"data":"\n"}
+,{"stream_name":"stdout","time":421.789630192,"data":"summary: {\"English\": {\"median_s\": 0.61, \"max_s\": 1.93, \"with_flags\": 0, \"of\": 18}, \"Kannada_direct\": {\"median_s\": 0.66, \"max_s\": 1.91, \"with_flags\": 0, \"of\": 18}, \"Kannada_via_English\": {\"median_s\": 1.3, \"max_s\": 3.77, \"with_flags\": 0, \"of\": 18}}\n"}
+,{"stream_name":"stdout","time":421.793621161,"data":"done: evon_results.json saved\n"}
+,{"stream_name":"stderr","time":424.118410675,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":424.118444456,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":424.387588978,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":424.387615631,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":425.612382769,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":426.542470409,"data":"[NbConvertApp] Writing 325484 bytes to __results__.html\n"}
+]

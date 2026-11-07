@@ -1,0 +1,111 @@
+[
+ {
+  "said": "ಎಲ್ಲಿದ್ದೀಯ ಬ್ರೋ ನಾನು ಇಲ್ಲೇ ಇದ್ದೀನಿ",
+  "hi-IN": {
+   "status": "ok",
+   "output": "भाई, कहाँ हो तुम? मैं यहीं हूँ।",
+   "problems": [],
+   "seconds": 2.84
+  },
+  "en": {
+   "status": "ok",
+   "output": "Where are you bro? I am right here.",
+   "problems": [],
+   "seconds": 2.05
+  }
+ },
+ {
+  "said": "ನಾನು ಗೇಟ್ ಹತ್ತಿರ ನಿಂತಿದ್ದೀನಿ ನೀವು ಎಲ್ಲಿದ್ದೀರಾ",
+  "hi-IN": {
+   "status": "ok",
+   "output": "मैं गेट के पास खड़ा हूँ, आप कहाँ हैं?",
+   "problems": [],
+   "seconds": 1.84
+  },
+  "en": {
+   "status": "ok",
+   "output": "I am standing near the gate. Where are you?",
+   "problems": [],
+   "seconds": 1.69
+  }
+ },
+ {
+  "said": "ಬಲಕ್ಕೆ ತಿರುಗಿ ಎರಡು ಗಲ್ಲಿ ನಂತರ ಕಟ್ಟಡ ಸಿಗುತ್ತೆ",
+  "hi-IN": {
+   "status": "ok",
+   "output": "दाएं मुड़िए और दो गलियों बाद बिल्डिंग मिल जाएगी।",
+   "problems": [],
+   "seconds": 2.1
+  },
+  "en": {
+   "status": "ok",
+   "output": "Turn right and after two lanes, there will be a building.",
+   "problems": [],
+   "seconds": 2.36
+  }
+ },
+ {
+  "said": "ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ತಲುಪುತ್ತೇನೆ",
+  "hi-IN": {
+   "status": "ok",
+   "output": "मैं पाँच मिनट में पहुँच जाऊँगा।",
+   "problems": [],
+   "seconds": 1.13
+  },
+  "en": {
+   "status": "ok",
+   "output": "I will reach in five minutes.",
+   "problems": [],
+   "seconds": 0.95
+  }
+ },
+ {
+  "said": "ಕಟ್ಟಡ ಕಾಣಿಸಿತು",
+  "hi-IN": {
+   "status": "ok",
+   "output": "बिल्डिंग दिखाई दी है।",
+   "problems": [],
+   "seconds": 1.09
+  },
+  "en": {
+   "status": "ok",
+   "output": "The building is visible.",
+   "problems": [],
+   "seconds": 0.91
+  }
+ },
+ {
+  "said": "ಇಲ್ಲಿ ಯಾರೂ ಇಲ್ಲ",
+  "hi-IN": {
+   "status": "ok",
+   "output": "यहाँ कोई नहीं है।",
+   "problems": [],
+   "seconds": 0.95
+  },
+  "en": {
+   "status": "ok",
+   "output": "There is no one here.",
+   "problems": [],
+   "seconds": 0.91
+  }
+ },
+ {
+  "said": "ಎಲ್ಲದ ಬ್ರೋ ನಾನು ಇಲ್ಲದ",
+  "hi-IN": {
+   "status": "rejected",
+   "output": "सब ठीक है, ब्रो! मैं नहीं हूँ.",
+   "problems": [
+    "negation: source has no negation, output has"
+   ],
+   "seconds": 2.16
+  },
+  "en": {
+   "status": "rejected",
+   "output": "Don't wait for me there.",
+   "problems": [
+    "negation: source has no negation, output has"
+   ],
+   "seconds": 1.01
+  }
+ }
+]

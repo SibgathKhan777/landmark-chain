@@ -1,0 +1,334 @@
+[
+ {
+  "said": "सामने बिल्डिंग नंबर सिक्स सेवन नाइन है मेरा और आप सीधे देखो ब्लू कलर का बंदा दिखेगा ब्लू कलर का टी शर्ट दिखेगा वहाँ पे आ जाना",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಮುಂದೆ ಕಟ್ಟಡ ಸಂಖ್ಯೆ 679 ಇದೆ, ನನ್ನದು. ನೀಲಿ ಬಣ್ಣದ ಅಂಗಿ ಧರಿಸಿರುವ ವ್ಯಕ್ತಿಯನ್ನು ನೇರವಾಗಿ ನೋಡಿ ಅಲ್ಲಿ ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 2.89,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "The building number is six seven nine in front. Look straight, you'll see a man wearing blue color shirt; come there.",
+   "problems": [],
+   "seconds": 2.09,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಭಯ್ಯಾ, ನೇರವಾಗಿ ಬನ್ನಿ ಮತ್ತು ಬಲಕ್ಕೆ ತಿರುಗಿ. ನಂತರ ಎದುರಿಗೆ ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ ಅಲ್ಲಿ ನಿಲ್ಸಿ ನಾನು ಬರುತ್ತಿದ್ದೇನೆ.",
+   "problems": [],
+   "seconds": 1.34,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "rejected",
+   "output": "Brother, come straight and take the right turn. Then you'll see a building ahead; stay there until I arrive.",
+   "problems": [
+    "condition: source has no if/when/until, output has"
+   ],
+   "seconds": 1.37,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "भैया चाय पीकर आना",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 2.05,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "Brother, come back after drinking tea.",
+   "problems": [],
+   "seconds": 1.51,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "building dikhne par right le lo",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+   "problems": [],
+   "seconds": 1.0,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "When you see the building, turn right.",
+   "problems": [],
+   "seconds": 1.6,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "agar building dikhe to wahan ruko",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಅಲ್ಲಿ ನಿಲ್ಲಿ.",
+   "problems": [],
+   "seconds": 1.01,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "If you see a building, then stop there.",
+   "problems": [],
+   "seconds": 1.05,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "driver seedha aa raha hai",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಚಾಲಕ ನೇರವಾಗಿ ಬರುತ್ತಿದ್ದಾನೆ.",
+   "problems": [],
+   "seconds": 1.0,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "The driver is coming straight.",
+   "problems": [],
+   "seconds": 1.84,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "क्या मैं सीधे आ जाऊं",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ನೇರವಾಗಿ ಬರಬಹುದೆ?",
+   "problems": [],
+   "seconds": 0.98,
+   "same_as_notebook": false
+  },
+  "en": {
+   "status": "ok",
+   "output": "Can I come straight in?",
+   "problems": [],
+   "seconds": 1.04,
+   "same_as_notebook": false
+  }
+ },
+ {
+  "said": "right mat lena seedha aao",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಬಲಕ್ಕೆ ಹೋಗಬೇಡ, ನೇರವಾಗಿ ಬಾ.",
+   "problems": [],
+   "seconds": 1.03,
+   "same_as_notebook": false
+  },
+  "en": {
+   "status": "ok",
+   "output": "Turn right no, come straight.",
+   "problems": [],
+   "seconds": 0.97,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "दो गली बाद राइट ले लो",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಎರಡು ಗಲ್ಲಿಯ ನಂತರ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+   "problems": [],
+   "seconds": 1.06,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "Turn right after two lanes.",
+   "problems": [],
+   "seconds": 1.05,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "आप वहाँ वेट कीजिए मैं फाइव मिनट में आ रहा हूँ",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ನೀವು ಅಲ್ಲಿ ಕಾಯಿರಿ ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತೇನೆ.",
+   "problems": [],
+   "seconds": 1.18,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "You wait there; I'll be back in five minutes.",
+   "problems": [],
+   "seconds": 1.08,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "bhaiya second gate right side wala, uske upar blue board hai",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಣ್ಣಾ ಎರಡನೇ ಗೇಟ್ ಬಲಬದಿಯಲ್ಲಿ ಇದೆ, ಅದರ ಮೇಲೆ ನೀಲಿ ಬೋರ್ಡ್ ಇದೆ.",
+   "problems": [],
+   "seconds": 1.23,
+   "same_as_notebook": false
+  },
+  "en": {
+   "status": "rejected",
+   "output": "Brother, the one on the left at the second gate has a blue board.",
+   "problems": [
+    "side: said ['right'], output ['left']"
+   ],
+   "seconds": 1.23,
+   "same_as_notebook": false
+  }
+ },
+ {
+  "said": "ye mera number nahi hai, dusra number try karo",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಇದು ನನ್ನ ಸಂಖ್ಯೆ ಅಲ್ಲ, ಇನ್ನೊಂದು ಸಂಖ್ಯೆಯನ್ನು ಪ್ರಯತ್ನಿಸಿ.",
+   "problems": [],
+   "seconds": 1.06,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "This is not my number; try another one.",
+   "problems": [],
+   "seconds": 1.09,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "jab tak gate na dikhe seedha aao",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಗೇಟ್ ಕಾಣುವವರೆಗೆ ನೇರವಾಗಿ ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 1.27,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "Come straight until you see the gate.",
+   "problems": [],
+   "seconds": 1.02,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "left mat lo seedha jao",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಎಡಕ್ಕೆ ತಿರುಗಿ ಬೇಡ, ನೇರವಾಗಿ ಹೋಗು.",
+   "problems": [],
+   "seconds": 1.19,
+   "same_as_notebook": false
+  },
+  "en": {
+   "status": "ok",
+   "output": "Turn left no, go straight.",
+   "problems": [],
+   "seconds": 1.02,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "kya yahan ruk jaun",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಈ ಸ್ಥಳದಲ್ಲಿ ನಾನು ನಿಲ್ಬೇಕು ಅಂತೀರಾ?",
+   "problems": [],
+   "seconds": 1.12,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "Shall I stop here?",
+   "problems": [],
+   "seconds": 0.96,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "do gali baad building ke samne ruko",
+  "new": true,
+  "kn-IN": {
+   "status": "rejected",
+   "output": "ಗಲ್ಲಿಯ ನಂತರದ ಕಟ್ಟಡದ ಎದುರು ನಿಲ್ಲಿ.",
+   "problems": [
+    "number: ['2'] said but not in the output"
+   ],
+   "seconds": 1.06,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "rejected",
+   "output": "Stop at the building in front of Gali Baad.",
+   "problems": [
+    "number: ['2'] said but not in the output"
+   ],
+   "seconds": 1.16,
+   "same_as_notebook": false
+  }
+ },
+ {
+  "said": "wo banda blue shirt mein hai",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅವನು ನೀಲಿ ಅಂಗಿ ಧರಿಸಿದ್ದಾನೆ.",
+   "problems": [],
+   "seconds": 1.47,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "That guy in the blue shirt is there.",
+   "problems": [],
+   "seconds": 1.1,
+   "same_as_notebook": true
+  }
+ },
+ {
+  "said": "bhaiya bahut traffic hai thoda late ho jaunga",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಣ್ಣಾ ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ ತಡವಾಗುತ್ತೇನೆ.",
+   "problems": [],
+   "seconds": 1.11,
+   "same_as_notebook": true
+  },
+  "en": {
+   "status": "ok",
+   "output": "Brother, there is a lot of traffic; I will be slightly delayed.",
+   "problems": [],
+   "seconds": 1.13,
+   "same_as_notebook": true
+  }
+ }
+]

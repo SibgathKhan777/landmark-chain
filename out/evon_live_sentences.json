@@ -1,0 +1,84 @@
+[
+ {
+  "said": "हाँ जी भैया कहाँ हो, मैं इधर ऊपर तीसरे फ्लोर पे खड़ा हूँ",
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಹೌದು ಅಣ್ಣಾ, ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ? ಮೂರನೇ ಮಹಡಿಯ ಮೇಲೆ ನಾನೇ ನಿಂತು ಕೊಂಡಿದ್ದೇನೆ.",
+   "problems": [],
+   "seconds": 1.42
+  },
+  "en": {
+   "status": "ok",
+   "output": "Yes sir where are you, I'm standing on the third floor here above.",
+   "problems": [],
+   "seconds": 1.14
+  }
+ },
+ {
+  "said": "हेलो भैया मैं इधर ऊपर खड़ा हूँ कहाँ हो आप",
+  "kn-IN": {
+   "status": "ok",
+   "output": "ನಮಸ್ಕಾರ ಅಣ್ಣಾ, ನಾನೂ ಇಲ್ಲೇ ಮೇಲ್ಭಾಗದಲ್ಲಿ ನಿಂತಿದ್ದೇನೆ, ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ?",
+   "problems": [],
+   "seconds": 1.24
+  },
+  "en": {
+   "status": "ok",
+   "output": "Hello brother! Where are you? I'm up here, where are you?",
+   "problems": [],
+   "seconds": 1.15
+  }
+ },
+ {
+  "said": "हेलो भैया, कहाँ हो मैं इधर ऊपर खड़ा हूँ, तीसरे फ्लोर पे आ जाइए।",
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಹಲೋ ಅಣ್ಣಾ, ಎಲ್ಲಿ ಇದ್ದೀಯೆ? ನಾನಿಲ್ಲಿ ಮೇಲೆ ನಿಂತು ಮೂರನೇ ಮಹಡಿಗೆ ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 2.15
+  },
+  "en": {
+   "status": "ok",
+   "output": "Hello brother, where are you? I'm up here on this side, come to the third floor.",
+   "problems": [],
+   "seconds": 1.25
+  }
+ },
+ {
+  "said": "मैं गेट पर खड़ा हूँ आप कहाँ हो",
+  "kn-IN": {
+   "status": "rejected",
+   "output": "ನಾನು ಎಲ್ಲಿ ಇದ್ದೇನೆ? ನೀವು ಗೇಟ್‌ನಲ್ಲಿ ನಿಂತಿದ್ದೀರಿ.",
+   "problems": [
+    "who: 'where' is said of you, output says it of I/we",
+    "who: 'stand' is said of I/we, output says it of you"
+   ],
+   "seconds": 1.09
+  },
+  "en": {
+   "status": "ok",
+   "output": "I am standing at the gate where are you",
+   "problems": [],
+   "seconds": 1.02
+  }
+ },
+ {
+  "said": "आप कहाँ हो मैं आ रहा हूँ",
+  "kn-IN": {
+   "status": "rejected",
+   "output": "ನಾನು ಬರುತ್ತಿದ್ದೇನೆ.",
+   "problems": [
+    "question: source is a question, output is not"
+   ],
+   "seconds": 0.97
+  },
+  "en": {
+   "status": "rejected",
+   "output": "I don't know where you are; I'm coming.",
+   "problems": [
+    "negation: source has no negation, output has"
+   ],
+   "seconds": 1.02
+  }
+ }
+]

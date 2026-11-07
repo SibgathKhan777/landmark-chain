@@ -1,0 +1,13 @@
+# secrets and local state
+.env
+__pycache__/
+*.pyc
+.venv/
+
+# generated output: keep only the result files the documents are built from (JSON/CSV); no audio, video, caches or recordings
+out/*
+!out/*.json
+!out/*.csv
+!out/live/
+out/live/*
+!out/live/results*.json

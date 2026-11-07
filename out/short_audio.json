@@ -1,0 +1,188 @@
+{
+ "lang": "mr-IN",
+ "voice": "Ishaan",
+ "utterances": [
+  {
+   "label": "two words",
+   "said": "निळे गेट",
+   "expected": "निळे गेट",
+   "seconds": 0.96,
+   "results": [
+    {
+     "cond": "clean",
+     "heard": "निरे गेट",
+     "decision": "ASK_AGAIN",
+     "reason": "nothing_matched"
+    },
+    {
+     "cond": "bike 10 dB",
+     "heard": "मेरे गेट",
+     "decision": "ASK_AGAIN",
+     "reason": "nothing_matched"
+    },
+    {
+     "cond": "bike 5 dB",
+     "heard": "",
+     "decision": "ASK_AGAIN",
+     "reason": "empty"
+    },
+    {
+     "cond": "bike 0 dB",
+     "heard": "",
+     "decision": "ASK_AGAIN",
+     "reason": "empty"
+    }
+   ]
+  },
+  {
+   "label": "carrier sentence",
+   "said": "मला निळे गेट दिसले",
+   "expected": "निळे गेट",
+   "seconds": 1.44,
+   "results": [
+    {
+     "cond": "clean",
+     "heard": "मला निळे गेट दिसले",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    },
+    {
+     "cond": "bike 10 dB",
+     "heard": "मला निळे गेट दिसले",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    },
+    {
+     "cond": "bike 5 dB",
+     "heard": "मला निळे गेट दिसले",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    },
+    {
+     "cond": "bike 0 dB",
+     "heard": "मला निरे गेट विकले",
+     "decision": "ASK_AGAIN",
+     "reason": "nothing_matched"
+    }
+   ]
+  },
+  {
+   "label": "three-word landmark",
+   "said": "देवळाच्या मागे निळे गेट",
+   "expected": "देवळाच्या मागे निळे गेट",
+   "seconds": 1.76,
+   "results": [
+    {
+     "cond": "clean",
+     "heard": "देवळाच्या मागे निळे गेट",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    },
+    {
+     "cond": "bike 10 dB",
+     "heard": "देवळाच्या मागे निळे गेट",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    },
+    {
+     "cond": "bike 5 dB",
+     "heard": "देवळाच्या मागे निळे गेट",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    },
+    {
+     "cond": "bike 0 dB",
+     "heard": "देवळाच्या मागे निळे घेत",
+     "decision": "ACCEPT",
+     "reason": "all_slots_matched"
+    }
+   ]
+  }
+ ],
+ "yes_no": [
+  {
+   "voice": "Zahira",
+   "said": "हो",
+   "want": "yes",
+   "seconds": 0.64,
+   "raw": {
+    "heard": "हो",
+    "parsed": "yes"
+   },
+   "padded": {
+    "heard": "हो",
+    "parsed": "yes"
+   }
+  },
+  {
+   "voice": "Zahira",
+   "said": "नाही",
+   "want": "no",
+   "seconds": 0.64,
+   "raw": {
+    "heard": "नाही",
+    "parsed": "no"
+   },
+   "padded": {
+    "heard": "नाही",
+    "parsed": "no"
+   }
+  },
+  {
+   "voice": "Ishaan",
+   "said": "हो",
+   "want": "yes",
+   "seconds": 0.64,
+   "raw": {
+    "heard": "हो",
+    "parsed": "yes"
+   },
+   "padded": {
+    "heard": "हो",
+    "parsed": "yes"
+   }
+  },
+  {
+   "voice": "Ishaan",
+   "said": "नाही",
+   "want": "no",
+   "seconds": 0.64,
+   "raw": {
+    "heard": "नाही",
+    "parsed": "no"
+   },
+   "padded": {
+    "heard": "नाही",
+    "parsed": "no"
+   }
+  },
+  {
+   "voice": "Zahira",
+   "said": "हो, बरोबर आहे",
+   "want": "yes",
+   "seconds": 1.76,
+   "raw": {
+    "heard": "हो बरोबर आहे",
+    "parsed": "yes"
+   },
+   "padded": {
+    "heard": "हो बरोबर आहे",
+    "parsed": "yes"
+   }
+  },
+  {
+   "voice": "Zahira",
+   "said": "नाही, चुकीचे आहे",
+   "want": "no",
+   "seconds": 1.76,
+   "raw": {
+    "heard": "नाही चुकीचे आहे",
+    "parsed": "no"
+   },
+   "padded": {
+    "heard": "नाही चुकीचे आहे",
+    "parsed": "no"
+   }
+  }
+ ]
+}

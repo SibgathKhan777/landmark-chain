@@ -1,0 +1,199 @@
+{
+ "hard_all": {
+  "clean": {
+   "n": 24,
+   "exact": 88,
+   "wer": 5,
+   "crit_all": 92,
+   "ident": 100,
+   "accept": 29,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@10": {
+   "n": 24,
+   "exact": 75,
+   "wer": 9,
+   "crit_all": 79,
+   "ident": 100,
+   "accept": 25,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@5": {
+   "n": 24,
+   "exact": 75,
+   "wer": 8,
+   "crit_all": 79,
+   "ident": 100,
+   "accept": 29,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@0": {
+   "n": 24,
+   "exact": 42,
+   "wer": 20,
+   "crit_all": 71,
+   "ident": 100,
+   "accept": 29,
+   "wrong_accept_of_accepted": 0
+  },
+  "engine@5": {
+   "n": 24,
+   "exact": 79,
+   "wer": 8,
+   "crit_all": 83,
+   "ident": 100,
+   "accept": 29,
+   "wrong_accept_of_accepted": 0
+  },
+  "babble@5": {
+   "n": 24,
+   "exact": 50,
+   "wer": 24,
+   "crit_all": 62,
+   "ident": 88,
+   "accept": 25,
+   "wrong_accept_of_accepted": 0
+  }
+ },
+ "hard_hi": {
+  "clean": {
+   "n": 12,
+   "exact": 92,
+   "wer": 2,
+   "crit_all": 92,
+   "ident": 100,
+   "accept": 17,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@10": {
+   "n": 12,
+   "exact": 83,
+   "wer": 4,
+   "crit_all": 83,
+   "ident": 100,
+   "accept": 17,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@5": {
+   "n": 12,
+   "exact": 75,
+   "wer": 5,
+   "crit_all": 75,
+   "ident": 100,
+   "accept": 17,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@0": {
+   "n": 12,
+   "exact": 33,
+   "wer": 16,
+   "crit_all": 67,
+   "ident": 100,
+   "accept": 25,
+   "wrong_accept_of_accepted": 0
+  },
+  "engine@5": {
+   "n": 12,
+   "exact": 83,
+   "wer": 4,
+   "crit_all": 83,
+   "ident": 100,
+   "accept": 17,
+   "wrong_accept_of_accepted": 0
+  },
+  "babble@5": {
+   "n": 12,
+   "exact": 58,
+   "wer": 18,
+   "crit_all": 67,
+   "ident": 83,
+   "accept": 25,
+   "wrong_accept_of_accepted": 0
+  }
+ },
+ "hard_mr": {
+  "clean": {
+   "n": 12,
+   "exact": 83,
+   "wer": 8,
+   "crit_all": 92,
+   "ident": 100,
+   "accept": 42,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@10": {
+   "n": 12,
+   "exact": 67,
+   "wer": 14,
+   "crit_all": 75,
+   "ident": 100,
+   "accept": 33,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@5": {
+   "n": 12,
+   "exact": 75,
+   "wer": 10,
+   "crit_all": 83,
+   "ident": 100,
+   "accept": 42,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@0": {
+   "n": 12,
+   "exact": 50,
+   "wer": 25,
+   "crit_all": 75,
+   "ident": 100,
+   "accept": 33,
+   "wrong_accept_of_accepted": 0
+  },
+  "engine@5": {
+   "n": 12,
+   "exact": 75,
+   "wer": 12,
+   "crit_all": 83,
+   "ident": 100,
+   "accept": 42,
+   "wrong_accept_of_accepted": 0
+  },
+  "babble@5": {
+   "n": 12,
+   "exact": 42,
+   "wer": 31,
+   "crit_all": 58,
+   "ident": 92,
+   "accept": 25,
+   "wrong_accept_of_accepted": 0
+  }
+ },
+ "orig_bike": {
+  "bike@10": {
+   "n": 20,
+   "exact": 90,
+   "wer": 2,
+   "crit_all": 90,
+   "ident": 100,
+   "accept": 100,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@5": {
+   "n": 20,
+   "exact": 75,
+   "wer": 6,
+   "crit_all": 85,
+   "ident": 100,
+   "accept": 100,
+   "wrong_accept_of_accepted": 0
+  },
+  "bike@0": {
+   "n": 20,
+   "exact": 55,
+   "wer": 12,
+   "crit_all": 55,
+   "ident": 100,
+   "accept": 100,
+   "wrong_accept_of_accepted": 0
+  }
+ }
+}

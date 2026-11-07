@@ -1,0 +1,43 @@
+{
+ "repeats": 3,
+ "timbre_identical_requests": [
+  {
+   "text": "मला निळे गेट दिसले",
+   "voice": "Ishaan",
+   "distinct_outputs": 3
+  },
+  {
+   "text": "निळे गेट",
+   "voice": "Ishaan",
+   "distinct_outputs": 3
+  },
+  {
+   "text": "मंदिर के पीछे नीला गेट",
+   "voice": "Nalini",
+   "distinct_outputs": 3
+  }
+ ],
+ "prisma_identical_audio": [
+  {
+   "audio": "clean",
+   "distinct_transcripts": 1,
+   "transcripts": [
+    "मला निळे गेट दिसले"
+   ]
+  },
+  {
+   "audio": "bike 0 dB",
+   "distinct_transcripts": 1,
+   "transcripts": [
+    "मला निळे गेट दिसून"
+   ]
+  },
+  {
+   "audio": "babble 5 dB",
+   "distinct_transcripts": 1,
+   "transcripts": [
+    "मला नीड ग्रेट"
+   ]
+  }
+ ]
+}

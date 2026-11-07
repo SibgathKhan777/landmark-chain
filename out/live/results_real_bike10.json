@@ -1,0 +1,330 @@
+{
+ "people": {
+  "customer": {
+   "lang": "hi-IN",
+   "voice": "Deepak",
+   "label": "Customer",
+   "language": "Hindi",
+   "line": "phone line, 20 dB noise",
+   "person": "Arun"
+  },
+  "biker": {
+   "lang": "kn-IN",
+   "voice": "Kavin",
+   "label": "Biker",
+   "language": "Kannada",
+   "line": "bike noise, 5 dB",
+   "person": "Manju"
+  }
+ },
+ "interpreter": {
+  "hi-IN": "Nalini",
+  "kn-IN": "Saanvi",
+  "en": "Yashvi"
+ },
+ "biker_snr": 10.0,
+ "turns": [
+  {
+   "n": 1,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "हेलो भैया, आप कहाँ हो?",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "हेलो भैया आप कहाँ हो",
+   "status": "ai",
+   "output": "ನಮಸ್ಕಾರ ಅಣ್ಣಾ, ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ?",
+   "english": "Hello brother, where are you? (AI gloss, not checked)",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [],
+   "intents": [],
+   "rules_status": "untranslated",
+   "coverage": 1.0,
+   "ai": {
+    "status": "ok",
+    "output": "ನಮಸ್ಕಾರ ಅಣ್ಣಾ, ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ?",
+    "problems": [],
+    "seconds": 1.2,
+    "checked": true,
+    "name": "Evon"
+   },
+   "speaks": [
+    {
+     "text": "ನಮಸ್ಕಾರ ಅಣ್ಣಾ, ನೀವು ಎಲ್ಲಿ ಇದ್ದೀರಿ?",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 2.4,
+   "ms": {
+    "stt": 415,
+    "rules": 1.68,
+    "tts": 587,
+    "total": 2203,
+    "llm": 1200
+   },
+   "audio_s": 1.76,
+   "audio_level": {
+    "peak_pct": 98.0,
+    "rms_dbfs": -15.2,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 2,
+   "who": "biker",
+   "listener": "customer",
+   "source": "script",
+   "said": "ಅಣ್ಣಾ ನಾನು ಮುಖ್ಯ ರಸ್ತೆಯಲ್ಲಿ ಇದ್ದೀನಿ, ಅಡ್ರೆಸ್ ಸಿಗ್ತಿಲ್ಲ",
+   "src": "kn-IN",
+   "dst": "hi-IN",
+   "heard": "ಅಣ್ಣ ನಾನು ಮುಖ್ಯ ರಸ್ತೆಯಲ್ಲಿ ಇದ್ದೀನಿ ಅಡ್ರೆಸ್ ಸಿಗ್ತಿಲ್ಲ",
+   "status": "ai",
+   "output": "भाई, मैं मुख्य सड़क पर हूँ पता नहीं मिल रहा।",
+   "english": "Brother, I am on the main road and cannot find the address. (AI gloss, not checked)",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [],
+   "intents": [],
+   "rules_status": "untranslated",
+   "coverage": 1.0,
+   "ai": {
+    "status": "ok",
+    "output": "भाई, मैं मुख्य सड़क पर हूँ पता नहीं मिल रहा।",
+    "problems": [],
+    "seconds": 1.19,
+    "checked": true,
+    "name": "Evon"
+   },
+   "speaks": [
+    {
+     "text": "भाई, मैं मुख्य सड़क पर हूँ पता नहीं मिल रहा।",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 2.88,
+   "ms": {
+    "stt": 225,
+    "rules": 1.38,
+    "tts": 478,
+    "total": 1891,
+    "llm": 1187
+   },
+   "audio_s": 3.68,
+   "audio_level": {
+    "peak_pct": 31.0,
+    "rms_dbfs": -23.8,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 3,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+   "status": "translated",
+   "output": "ನೇರವಾಗಿ ಬನ್ನಿ, ಬಲಕ್ಕೆ ತಿರುಗಿ, ಎದುರು ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ, ಅಲ್ಲಿ ನಿಲ್ಲಿ, ನಾನು ಬರುತ್ತಿದ್ದೇನೆ",
+   "english": "come straight, turn right, you will see a building ahead, wait there, I am coming",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "STRAIGHT",
+    "TURN",
+    "SEE_AHEAD",
+    "WAIT",
+    "COMING"
+   ],
+   "intents": [],
+   "rules_status": "translated",
+   "coverage": 1.0,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "ನೇರವಾಗಿ ಬನ್ನಿ, ಬಲಕ್ಕೆ ತಿರುಗಿ, ಎದುರು ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ, ಅಲ್ಲಿ ನಿಲ್ಲಿ, ನಾನು ಬರುತ್ತಿದ್ದೇನೆ",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 6.08,
+   "ms": {
+    "stt": 240,
+    "rules": 0.78,
+    "tts": 886,
+    "total": 1127
+   },
+   "audio_s": 4.48,
+   "audio_level": {
+    "peak_pct": 99.4,
+    "rms_dbfs": -14.3,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 4,
+   "who": "biker",
+   "listener": "customer",
+   "source": "script",
+   "said": "ಕಟ್ಟಡ ಕಾಣಿಸಿತು ಅಣ್ಣಾ",
+   "src": "kn-IN",
+   "dst": "hi-IN",
+   "heard": "ಕಟ್ಟಡ ಕಾಣಿಸಿತು ಅಣ್ಣ",
+   "status": "translated",
+   "output": "बिल्डिंग दिख गई",
+   "english": "I can see the building",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "SEEN"
+   ],
+   "intents": [],
+   "rules_status": "translated",
+   "coverage": 1.0,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "बिल्डिंग दिख गई",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 1.28,
+   "ms": {
+    "stt": 192,
+    "rules": 0.56,
+    "tts": 476,
+    "total": 669
+   },
+   "audio_s": 1.44,
+   "audio_level": {
+    "peak_pct": 37.9,
+    "rms_dbfs": -23.6,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 5,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "हाँ वही है, मैं तीसरे फ्लोर पर हूँ, नीला दरवाजा है",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "हाँ वही है मैं तीसरे फ्लोर पर हूँ नीला दरवाज़ा है",
+   "status": "ai",
+   "output": "ಹೌದು ಅದೇ ಇದೆ, ಮೂರನೇ ಮಹಡಿಯಲ್ಲಿದ್ದೇನೆ ನೀಲಿ ಬಾಗಿಲು ಕಾಣಿಸುತ್ತದೆ.",
+   "english": "Yes that's me; I'm on the third floor, there is a blue door. (AI gloss, not checked)",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [],
+   "intents": [
+    "YES"
+   ],
+   "rules_status": "partial",
+   "coverage": 0.714,
+   "ai": {
+    "status": "ok",
+    "output": "ಹೌದು ಅದೇ ಇದೆ, ಮೂರನೇ ಮಹಡಿಯಲ್ಲಿದ್ದೇನೆ ನೀಲಿ ಬಾಗಿಲು ಕಾಣಿಸುತ್ತದೆ.",
+    "problems": [],
+    "seconds": 1.94,
+    "checked": true,
+    "name": "Evon"
+   },
+   "speaks": [
+    {
+     "text": "ಹೌದು ಅದೇ ಇದೆ, ಮೂರನೇ ಮಹಡಿಯಲ್ಲಿದ್ದೇನೆ ನೀಲಿ ಬಾಗಿಲು ಕಾಣಿಸುತ್ತದೆ.",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 3.68,
+   "ms": {
+    "stt": 218,
+    "rules": 2.87,
+    "tts": 994,
+    "total": 3156,
+    "llm": 1942
+   },
+   "audio_s": 3.36,
+   "audio_level": {
+    "peak_pct": 96.7,
+    "rms_dbfs": -15.7,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 6,
+   "who": "biker",
+   "listener": "customer",
+   "source": "script",
+   "said": "ಸರಿ ಅಣ್ಣಾ, ಬರ್ತಾ ಇದ್ದೀನಿ",
+   "src": "kn-IN",
+   "dst": "hi-IN",
+   "heard": "ಸರಿ ಅಣ್ಣ ಬರ್ತಾಯಿದ್ದೀನಿ",
+   "status": "ai",
+   "output": "ठीक है, भाई आ रहा हूँ।",
+   "english": "Okay brother, coming now. (AI gloss, not checked)",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [],
+   "intents": [
+    "YES"
+   ],
+   "rules_status": "partial",
+   "coverage": 0.5,
+   "ai": {
+    "status": "ok",
+    "output": "ठीक है, भाई आ रहा हूँ।",
+    "problems": [],
+    "seconds": 1.05,
+    "checked": true,
+    "name": "Evon"
+   },
+   "speaks": [
+    {
+     "text": "ठीक है, भाई आ रहा हूँ।",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 1.92,
+   "ms": {
+    "stt": 204,
+    "rules": 0.64,
+    "tts": 764,
+    "total": 2018,
+    "llm": 1049
+   },
+   "audio_s": 1.76,
+   "audio_level": {
+    "peak_pct": 37.4,
+    "rms_dbfs": -25.3,
+    "clipped_pct": 0.0
+   }
+  }
+ ],
+ "errors": [],
+ "latency": {
+  "turns": 6,
+  "median_ms": 2018,
+  "min_ms": 669,
+  "max_ms": 3156
+ },
+ "calls": {
+  "tts": 6,
+  "stt": 6
+ },
+ "ai_fallback": true
+}

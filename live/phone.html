@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caller window</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main class="solo" id="root"></main>
+<script src="/app.js"></script>
+<script>
+  const role = new URLSearchParams(location.search).get("role") === "biker" ? "biker" : "customer";
+  document.title = (role === "biker" ? "Biker" : "Customer") + " · caller window";
+  mountPhone(document.getElementById("root"), role);
+</script>
+</body>
+</html>

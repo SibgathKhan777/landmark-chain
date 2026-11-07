@@ -1,0 +1,233 @@
+{
+ "people": {
+  "customer": {
+   "lang": "en",
+   "stt": "en-IN",
+   "tts": "en-IN",
+   "voice": "Deepak",
+   "label": "Customer",
+   "language": "English",
+   "line": "phone line, 20 dB noise",
+   "person": "Arun"
+  },
+  "biker": {
+   "lang": "hi-IN",
+   "voice": "Kavin",
+   "label": "Biker",
+   "language": "Hindi",
+   "line": "bike noise, 5 dB",
+   "person": "Manju"
+  }
+ },
+ "interpreter": {
+  "hi-IN": "Nalini",
+  "kn-IN": "Saanvi",
+  "en": "Yashvi"
+ },
+ "biker_snr": 5,
+ "turns": [
+  {
+   "n": 1,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "Go straight, take a right, then you will see a building ahead. Wait there.",
+   "src": "en",
+   "dst": "hi-IN",
+   "heard": "go straight take a right then you will see a building ahead wait there",
+   "status": "translated",
+   "output": "सीधे जाइए, दाएं मुड़िए, सामने बिल्डिंग दिखेगी, वहाँ रुकिए",
+   "english": "go straight, turn right, you will see a building ahead, wait there",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "STRAIGHT",
+    "TURN",
+    "SEE_AHEAD",
+    "WAIT"
+   ],
+   "intents": [],
+   "rules_status": "translated",
+   "coverage": 1.0,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "सीधे जाइए, दाएं मुड़िए, सामने बिल्डिंग दिखेगी, वहाँ रुकिए",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 4.32,
+   "ms": {
+    "stt": 377,
+    "rules": 1.72,
+    "tts": 619,
+    "total": 998
+   },
+   "audio_s": 4.16,
+   "audio_level": {
+    "peak_pct": 99.7,
+    "rms_dbfs": -16.2,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 2,
+   "who": "biker",
+   "listener": "customer",
+   "source": "script",
+   "said": "बिल्डिंग दिख गई भैया",
+   "src": "hi-IN",
+   "dst": "en",
+   "heard": "बिल्डिंग दिख गई भैया",
+   "status": "translated",
+   "output": "I can see the building",
+   "english": "I can see the building",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "SEEN"
+   ],
+   "intents": [],
+   "rules_status": "translated",
+   "coverage": 1.0,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "I can see the building",
+     "lang": "en"
+    }
+   ],
+   "notices": [],
+   "play_s": 1.44,
+   "ms": {
+    "stt": 321,
+    "rules": 0.53,
+    "tts": 536,
+    "total": 858
+   },
+   "audio_s": 1.28,
+   "audio_level": {
+    "peak_pct": 40.8,
+    "rms_dbfs": -19.7,
+    "clipped_pct": 0.0
+   }
+  },
+  {
+   "n": 3,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "Wait there, I will be down in five minutes.",
+   "src": "en",
+   "dst": "hi-IN",
+   "heard": "wait there i will be down in five minutes",
+   "status": "partial",
+   "output": "वहाँ रुकिए",
+   "english": "wait there",
+   "reason": "partial",
+   "reason_text": "only the directions, plans and landmark words were translated",
+   "untranslated": [
+    "be",
+    "down",
+    "five",
+    "minutes"
+   ],
+   "clauses": [
+    "WAIT"
+   ],
+   "intents": [],
+   "rules_status": "partial",
+   "coverage": 0.2,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "वहाँ रुकिए",
+     "lang": "hi-IN"
+    },
+    {
+     "text": "बाकी बात अनुवाद नहीं हो सकी।",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 2.88,
+   "ms": {
+    "stt": 208,
+    "rules": 4.24,
+    "tts": 775,
+    "total": 987
+   },
+   "audio_s": 2.4,
+   "audio_level": {
+    "peak_pct": 99.8,
+    "rms_dbfs": -14.8,
+    "clipped_pct": 0.01
+   }
+  },
+  {
+   "n": 4,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "Please bring some water.",
+   "src": "en",
+   "dst": "hi-IN",
+   "heard": "please drink some water",
+   "status": "untranslated",
+   "output": "",
+   "english": "",
+   "reason": "no_known_words",
+   "reason_text": "none of the words are in the landmark list or the phrasebook",
+   "untranslated": [
+    "drink",
+    "some",
+    "water"
+   ],
+   "clauses": [],
+   "intents": [],
+   "rules_status": "untranslated",
+   "coverage": 1.0,
+   "ai": null,
+   "speaks": [
+    {
+     "text": "सामने वाले की बात अनुवाद नहीं हो सकी।",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [
+    {
+     "text": "This could not be translated. Please say a landmark.",
+     "lang": "en"
+    }
+   ],
+   "play_s": 3.2,
+   "ms": {
+    "stt": 179,
+    "rules": 2.26,
+    "tts": 1269,
+    "total": 1450
+   },
+   "audio_s": 1.28,
+   "audio_level": {
+    "peak_pct": 98.9,
+    "rms_dbfs": -14.8,
+    "clipped_pct": 0.0
+   }
+  }
+ ],
+ "errors": [],
+ "latency": {
+  "turns": 4,
+  "median_ms": 998,
+  "min_ms": 858,
+  "max_ms": 1450
+ },
+ "calls": {
+  "tts": 10,
+  "stt": 4
+ },
+ "ai_fallback": true
+}

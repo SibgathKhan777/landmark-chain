@@ -1,0 +1,294 @@
+[
+ {
+  "said": "सामने बिल्डिंग नंबर सिक्स सेवन नाइन है मेरा और आप सीधे देखो ब्लू कलर का बंदा दिखेगा ब्लू कलर का टी शर्ट दिखेगा वहाँ पे आ जाना",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ನನ್ನ ಮನೆ ಸಂಖ್ಯೆ 679. ನೀಲಿ ಬಣ್ಣದ ಬಟ್ಟೆ ತೊಟ್ಟಿರುವ ವ್ಯಕ್ತಿಯನ್ನು ನೋಡಿ, ಅವನು ಅಲ್ಲಿಗೆ ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 2.44
+  },
+  "en": {
+   "status": "ok",
+   "output": "The building number is 679. I am here, look straight ahead and you will see a man in blue shirt; come there.",
+   "problems": [],
+   "seconds": 1.55
+  }
+ },
+ {
+  "said": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಭಯ್ಯಾ, ನೇರವಾಗಿ ಬನ್ನಿ ಮತ್ತು ಬಲಕ್ಕೆ ತಿರುಗಿ ನಂತರ ಎದುರಿಗೆ ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ ಅಲ್ಲಿ ನಿಲ್ಲಿರಿ ನಾನು ಬರುತ್ತಿದ್ದೇನೆ.",
+   "problems": [],
+   "seconds": 2.01
+  },
+  "en": {
+   "status": "ok",
+   "output": "Brother, come straight and then take a right turn; there will be a building in front of you—stop there. I am coming.",
+   "problems": [],
+   "seconds": 1.46
+  }
+ },
+ {
+  "said": "भैया चाय पीकर आना",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 1.51
+  },
+  "en": {
+   "status": "ok",
+   "output": "Brother, come after drinking tea.",
+   "problems": [],
+   "seconds": 0.96
+  }
+ },
+ {
+  "said": "building dikhne par right le lo",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+   "problems": [],
+   "seconds": 1.11
+  },
+  "en": {
+   "status": "ok",
+   "output": "When you see the building, turn right.",
+   "problems": [],
+   "seconds": 1.68
+  }
+ },
+ {
+  "said": "agar building dikhe to wahan ruko",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಅಲ್ಲಿ ನಿಲ್ಲಿ.",
+   "problems": [],
+   "seconds": 1.05
+  },
+  "en": {
+   "status": "ok",
+   "output": "If a building appears, stop there.",
+   "problems": [],
+   "seconds": 1.0
+  }
+ },
+ {
+  "said": "driver seedha aa raha hai",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಚಾಲಕ ನೇರವಾಗಿ ಬರುತ್ತಿದ್ದಾನೆ.",
+   "problems": [],
+   "seconds": 1.01
+  },
+  "en": {
+   "status": "ok",
+   "output": "The driver is coming straight.",
+   "problems": [],
+   "seconds": 1.51
+  }
+ },
+ {
+  "said": "क्या मैं सीधे आ जाऊं",
+  "new": false,
+  "kn-IN": {
+   "status": "rejected",
+   "output": "ನೇರವಾಗಿ ಬರಬಹುದು.",
+   "problems": [
+    "question: source is a question, output is not"
+   ],
+   "seconds": 1.01
+  },
+  "en": {
+   "status": "ok",
+   "output": "Can I come straight in?",
+   "problems": [],
+   "seconds": 1.63
+  }
+ },
+ {
+  "said": "right mat lena seedha aao",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಬಲಕ್ಕೆ ತಿರುಗಬೇಡಿ, ನೇರವಾಗಿ ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 1.95
+  },
+  "en": {
+   "status": "ok",
+   "output": "Do not turn right, come straight.",
+   "problems": [],
+   "seconds": 1.02
+  }
+ },
+ {
+  "said": "दो गली बाद राइट ले लो",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಎರಡು ಬೀದಿ ನಂತರ ಬಲಕ್ಕೆ ತಿರುಗು.",
+   "problems": [],
+   "seconds": 1.13
+  },
+  "en": {
+   "status": "ok",
+   "output": "Turn right after two lanes.",
+   "problems": [],
+   "seconds": 1.02
+  }
+ },
+ {
+  "said": "आप वहाँ वेट कीजिए मैं फाइव मिनट में आ रहा हूँ",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಲ್ಲಿ ಕಾಯಿರಿ, ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತೇನೆ.",
+   "problems": [],
+   "seconds": 1.23
+  },
+  "en": {
+   "status": "ok",
+   "output": "You wait there; I will be coming in five minutes.",
+   "problems": [],
+   "seconds": 1.13
+  }
+ },
+ {
+  "said": "bhaiya second gate right side wala, uske upar blue board hai",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಣ್ಣಾ ಎರಡನೇ ಗೇಟ್ ಬಲಬದಿಯದ್ದು, ಅದರ ಮೇಲೆ ನೀಲಿ ಬೋರ್ಡ್ ಇದೆ.",
+   "problems": [],
+   "seconds": 1.22
+  },
+  "en": {
+   "status": "ok",
+   "output": "Brother, go to the second gate on the right; there is a blue board above it.",
+   "problems": [],
+   "seconds": 1.23
+  }
+ },
+ {
+  "said": "ye mera number nahi hai, dusra number try karo",
+  "new": false,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಇದು ನನ್ನ ಸಂಖ್ಯೆ ಅಲ್ಲ, ಇನ್ನೊಂದು ಸಂಖ್ಯೆಯನ್ನು ಪ್ರಯತ್ನಿಸಿ.",
+   "problems": [],
+   "seconds": 1.02
+  },
+  "en": {
+   "status": "ok",
+   "output": "This is not my number; try another one.",
+   "problems": [],
+   "seconds": 1.03
+  }
+ },
+ {
+  "said": "jab tak gate na dikhe seedha aao",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಗೇಟ್ ಕಾಣುವವರೆಗೆ ನೇರವಾಗಿ ಬನ್ನಿ.",
+   "problems": [],
+   "seconds": 1.02
+  },
+  "en": {
+   "status": "ok",
+   "output": "Come straight until you see the gate.",
+   "problems": [],
+   "seconds": 1.02
+  }
+ },
+ {
+  "said": "left mat lo seedha jao",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಎಡಕ್ಕೆ ತಿರುಗಬೇಡಿ, ನೇರವಾಗಿ ಹೋಗಿ.",
+   "problems": [],
+   "seconds": 1.02
+  },
+  "en": {
+   "status": "ok",
+   "output": "Do not turn left; go straight.",
+   "problems": [],
+   "seconds": 0.99
+  }
+ },
+ {
+  "said": "kya yahan ruk jaun",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಇಲ್ಲಿ ನಿಲ್ಲಬಹುದೇ?",
+   "problems": [],
+   "seconds": 0.96
+  },
+  "en": {
+   "status": "ok",
+   "output": "Shall I stop here?",
+   "problems": [],
+   "seconds": 1.01
+  }
+ },
+ {
+  "said": "do gali baad building ke samne ruko",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಎರಡು ಬೀದಿಗಳ ನಂತರ ಕಟ್ಟಡದ ಮುಂದೆ ನಿಲ್ಲಿ.",
+   "problems": [],
+   "seconds": 1.12
+  },
+  "en": {
+   "status": "rejected",
+   "output": "Stop in front of the building after that lane.",
+   "problems": [
+    "number: ['2'] said but not in the output"
+   ],
+   "seconds": 1.13
+  }
+ },
+ {
+  "said": "wo banda blue shirt mein hai",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅವನು ನೀಲಿ ಅಂಗಿ ಧರಿಸಿದ್ದಾನೆ.",
+   "problems": [],
+   "seconds": 0.99
+  },
+  "en": {
+   "status": "ok",
+   "output": "That guy is in a blue shirt.",
+   "problems": [],
+   "seconds": 1.47
+  }
+ },
+ {
+  "said": "bhaiya bahut traffic hai thoda late ho jaunga",
+  "new": true,
+  "kn-IN": {
+   "status": "ok",
+   "output": "ಅಣ್ಣಾ ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ ತಡವಾಗಬಹುದು.",
+   "problems": [],
+   "seconds": 1.09
+  },
+  "en": {
+   "status": "ok",
+   "output": "Brother, there is a lot of traffic; I will be slightly delayed.",
+   "problems": [],
+   "seconds": 1.16
+  }
+ }
+]

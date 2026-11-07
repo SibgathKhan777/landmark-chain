@@ -1,0 +1,859 @@
+[
+ {
+  "group": "the sentence itself",
+  "text": "bhaiya seedhe aa jao right le lo phir samne building dikhegi wahan ruko main aa raha hoon",
+  "want": [
+   "STRAIGHT",
+   "TURN",
+   "SEE_AHEAD",
+   "WAIT",
+   "COMING"
+  ],
+  "got": [
+   "STRAIGHT",
+   "TURN",
+   "SEE_AHEAD",
+   "WAIT",
+   "COMING"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "come straight, turn right, you will see a building ahead, wait there, I am coming",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "the sentence itself",
+  "text": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+  "want": [
+   "STRAIGHT",
+   "TURN",
+   "SEE_AHEAD",
+   "WAIT",
+   "COMING"
+  ],
+  "got": [
+   "STRAIGHT",
+   "TURN",
+   "SEE_AHEAD",
+   "WAIT",
+   "COMING"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "come straight, turn right, you will see a building ahead, wait there, I am coming",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "English words, Roman",
+  "text": "straight aa jao",
+  "want": [
+   "STRAIGHT"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [
+   "aa",
+   "jao"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "English words, Roman",
+  "text": "seedha aao phir right turn kar lo",
+  "want": [
+   "STRAIGHT",
+   "TURN"
+  ],
+  "got": [
+   "STRAIGHT",
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "come straight, turn right",
+  "untranslated": [
+   "turn",
+   "kar"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "English words, Roman",
+  "text": "wait karo main aa raha hu",
+  "want": [
+   "WAIT",
+   "COMING"
+  ],
+  "got": [
+   "WAIT",
+   "COMING"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "wait, I am coming",
+  "untranslated": [
+   "karo"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "English words, Roman",
+  "text": "left side mud jao",
+  "want": [
+   "TURN"
+  ],
+  "got": [
+   "TURN"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "turn left",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "English words, Roman",
+  "text": "right hand side pe mudna",
+  "want": [
+   "TURN"
+  ],
+  "got": [
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "turn right",
+  "untranslated": [
+   "hand",
+   "pe"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "English words, Roman",
+  "text": "go straight and take a right",
+  "want": [
+   "STRAIGHT",
+   "TURN"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [
+   "go",
+   "and",
+   "take"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "English words, Devanagari",
+  "text": "स्ट्रेट आ जाओ",
+  "want": [
+   "STRAIGHT"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "स्ट्रेट",
+   "जाओ"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "English words, Devanagari",
+  "text": "टर्न राइट कर लो",
+  "want": [
+   "TURN"
+  ],
+  "got": [
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "turn right",
+  "untranslated": [
+   "टर्न",
+   "कर"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "English words, Devanagari",
+  "text": "वेट करो",
+  "want": [
+   "WAIT"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "वेट",
+   "करो"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "English words, Devanagari",
+  "text": "लेफ्ट साइड मुड़ जाओ",
+  "want": [
+   "TURN"
+  ],
+  "got": [
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "turn left",
+  "untranslated": [
+   "साइड"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "variants",
+  "text": "सीधा आओ दाएं मुड़ो",
+  "want": [
+   "STRAIGHT",
+   "TURN"
+  ],
+  "got": [
+   "STRAIGHT",
+   "TURN"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "come straight, turn right",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "variants",
+  "text": "ek dum seedha aao",
+  "want": [
+   "STRAIGHT"
+  ],
+  "got": [
+   "STRAIGHT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "come straight",
+  "untranslated": [
+   "ek",
+   "dum"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "variants",
+  "text": "दाहिने हाथ पर मुड़ जाइए",
+  "want": [
+   "TURN"
+  ],
+  "got": [
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "turn right",
+  "untranslated": [
+   "हाथ"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "variants",
+  "text": "बाएं हाथ की तरफ मुड़ो",
+  "want": [
+   "TURN"
+  ],
+  "got": [
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "turn left",
+  "untranslated": [
+   "हाथ"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "variants",
+  "text": "yahin ruko",
+  "want": [
+   "WAIT"
+  ],
+  "got": [
+   "WAIT"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "wait here",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "variants",
+  "text": "ruk jao wahan",
+  "want": [
+   "WAIT"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "ruk",
+   "jao",
+   "wahan"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "variants",
+  "text": "main aa gaya",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "aa",
+   "gaya"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "variants",
+  "text": "aa rha hu",
+  "want": [
+   "COMING"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "aa",
+   "rha",
+   "hu"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "variants",
+  "text": "मैं आ रही हूँ",
+  "want": [
+   "COMING"
+  ],
+  "got": [
+   "COMING"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "I am coming",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "variants",
+  "text": "बिल्डिंग के सामने ठहरो",
+  "want": null,
+  "got": [
+   "WAIT"
+  ],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "variants",
+  "text": "samne building dikh jayegi",
+  "want": [
+   "SEE_AHEAD"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [
+   "dikh",
+   "jayegi"
+  ],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "variants",
+  "text": "सामने नीला गेट दिखेगा",
+  "want": [
+   "SEE_AHEAD"
+  ],
+  "got": [
+   "SEE_AHEAD"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "you will see a blue gate ahead",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "pehle left lo phir right lo",
+  "want": [
+   "TURN",
+   "TURN"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "conflict",
+  "english": "",
+  "untranslated": [],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "बाएं मुड़ो फिर दाएं मुड़ो",
+  "want": [
+   "TURN",
+   "TURN"
+  ],
+  "got": [],
+  "status": "untranslated",
+  "reason": "conflict",
+  "english": "",
+  "untranslated": [],
+  "verdict": "SAFE MISS"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "right le lo phir seedha aao",
+  "want": [
+   "TURN",
+   "STRAIGHT"
+  ],
+  "got": [
+   "TURN",
+   "STRAIGHT"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "turn right, come straight",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "dusra right le lo",
+  "want": null,
+  "got": [
+   "TURN"
+  ],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "दूसरी गली से दाएं मुड़ो",
+  "want": null,
+  "got": [
+   "TURN"
+  ],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "100 meter seedha aao",
+  "want": null,
+  "got": [
+   "STRAIGHT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "come straight",
+  "untranslated": [
+   "meter"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "दो गली बाद राइट ले लो",
+  "want": null,
+  "got": [
+   "TURN"
+  ],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "seedhe jao phir u turn le lo",
+  "want": null,
+  "got": [
+   "STRAIGHT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "go straight",
+  "untranslated": [
+   "turn",
+   "le",
+   "lo"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "multi-step routes",
+  "text": "peeche aa jao",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [
+   "aa",
+   "jao"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "negation",
+  "text": "right mat lena seedha aao",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "negation",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "negation",
+  "text": "left nahi right lo",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "negation",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "negation",
+  "text": "ruko mat seedha aao",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "negation",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "negation",
+  "text": "सीधे मत आना",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "negation",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "negation",
+  "text": "building nahi dikhegi",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "nahi",
+   "dikhegi"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "questions",
+  "text": "kya main seedha aaun",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [
+   "kya",
+   "aaun"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "questions",
+  "text": "building dikh rahi hai?",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "dikh",
+   "rahi"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "questions",
+  "text": "right lena hai ya left",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "ambiguous",
+  "english": "",
+  "untranslated": [
+   "lena",
+   "ya"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "questions",
+  "text": "सीधे आ जाऊं",
+  "want": null,
+  "got": [
+   "STRAIGHT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "come straight",
+  "untranslated": [
+   "जाऊं"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "conditions and reasons",
+  "text": "jab building dikhe tab ruk jana",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "jab",
+   "dikhe",
+   "tab",
+   "ruk",
+   "jana"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "conditions and reasons",
+  "text": "agar building dikhe to wahan ruko",
+  "want": null,
+  "got": [
+   "WAIT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "wait there",
+  "untranslated": [
+   "agar",
+   "dikhe",
+   "to"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "conditions and reasons",
+  "text": "seedhe aa jao nahi to main late ho jaunga",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "negation",
+  "english": "",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "conditions and reasons",
+  "text": "building dikhne par right le lo",
+  "want": null,
+  "got": [
+   "TURN"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "turn right",
+  "untranslated": [
+   "dikhne"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "conditions and reasons",
+  "text": "ruko main aa raha hoon phir seedha aana",
+  "want": [
+   "WAIT",
+   "COMING",
+   "STRAIGHT"
+  ],
+  "got": [
+   "WAIT",
+   "COMING",
+   "STRAIGHT"
+  ],
+  "status": "translated",
+  "reason": "",
+  "english": "wait, I am coming, come straight",
+  "untranslated": [],
+  "verdict": "OK"
+ },
+ {
+  "group": "someone else",
+  "text": "wo wahan ruka hua hai",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "wahan",
+   "ruka",
+   "hua"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "someone else",
+  "text": "mera dost aa raha hai",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "mera",
+   "dost",
+   "aa",
+   "raha"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "someone else",
+  "text": "driver seedha aa raha hai",
+  "want": null,
+  "got": [
+   "STRAIGHT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "come straight",
+  "untranslated": [
+   "driver",
+   "raha"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "look-alikes",
+  "text": "right side wala gate",
+  "want": null,
+  "got": [],
+  "status": "translated",
+  "reason": "",
+  "english": "gate on the right",
+  "untranslated": [],
+  "verdict": "UNSAFE PASS"
+ },
+ {
+  "group": "look-alikes",
+  "text": "सीधे हाथ की तरफ वाला मकान",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "unsupported_combination",
+  "english": "",
+  "untranslated": [
+   "हाथ"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "look-alikes",
+  "text": "bhaiya thoda ruko, chai pi lo",
+  "want": null,
+  "got": [
+   "WAIT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "wait",
+  "untranslated": [
+   "thoda",
+   "chai",
+   "pi",
+   "lo"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ },
+ {
+  "group": "look-alikes",
+  "text": "ok ok aa jao",
+  "want": null,
+  "got": [],
+  "status": "untranslated",
+  "reason": "no_known_words",
+  "english": "",
+  "untranslated": [
+   "ok",
+   "ok",
+   "aa",
+   "jao"
+  ],
+  "verdict": "OK"
+ },
+ {
+  "group": "look-alikes",
+  "text": "haan haan seedhe aa jao",
+  "want": [
+   "STRAIGHT"
+  ],
+  "got": [
+   "STRAIGHT"
+  ],
+  "status": "partial",
+  "reason": "partial",
+  "english": "come straight",
+  "untranslated": [
+   "haan",
+   "haan"
+  ],
+  "verdict": "FLAGGED PARTIAL"
+ }
+]

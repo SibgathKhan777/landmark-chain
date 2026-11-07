@@ -1,0 +1,556 @@
+[
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "side": [
+    "RIGHT"
+   ],
+   "ordinal": [
+    "2"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "दाएं तरफ दूसरा गेट",
+  "heard": "दाईं तरफ दूसरा गेट।",
+  "exact_text": false,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "anchor": [
+    "TEMPLE"
+   ],
+   "relation": [
+    "BEHIND"
+   ],
+   "colour": [
+    "BLUE"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "मंदिर के पीछे नीला गेट",
+  "heard": "मंदिर के पीछे नीला गेट।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "anchor": [
+    "TANK"
+   ],
+   "relation": [
+    "NEAR"
+   ],
+   "colour": [
+    "YELLOW"
+   ],
+   "target": [
+    "HOUSE"
+   ]
+  },
+  "phrase": "पानी की टंकी के पास पीला मकान",
+  "heard": "पानी की टंकी के पास पीला मकान।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "ordinal": [
+    "3"
+   ],
+   "colour": [
+    "GREEN"
+   ],
+   "target": [
+    "LANE",
+    "HOUSE"
+   ]
+  },
+  "phrase": "तीसरी गली में हरा मकान",
+  "heard": "तीसरी गली में हरा मकान।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "side": [
+    "LEFT"
+   ],
+   "ordinal": [
+    "1"
+   ],
+   "target": [
+    "SHOP"
+   ]
+  },
+  "phrase": "बाएं तरफ पहली दुकान",
+  "heard": "बाएं तरफ पहली दुकान।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "anchor": [
+    "SCHOOL"
+   ],
+   "relation": [
+    "FRONT"
+   ]
+  },
+  "phrase": "स्कूल के सामने",
+  "heard": "स्कूल के सामने",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "anchor": [
+    "TREE"
+   ],
+   "relation": [
+    "BELOW"
+   ]
+  },
+  "phrase": "पेड़ के नीचे",
+  "heard": "पेड़ के नीचे",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "anchor": [
+    "BANK"
+   ],
+   "relation": [
+    "ABOVE"
+   ],
+   "colour": [
+    "WHITE"
+   ],
+   "target": [
+    "HOUSE"
+   ]
+  },
+  "phrase": "बैंक के ऊपर सफेद मकान",
+  "heard": "बैंक के ऊपर सफेद मकान।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "anchor": [
+    "MOSQUE"
+   ],
+   "relation": [
+    "AFTER"
+   ],
+   "colour": [
+    "RED"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "मस्जिद के बाद लाल गेट",
+  "heard": "मस्जिद के बाद लाल गेट।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "anchor": [
+    "CHOWK"
+   ],
+   "relation": [
+    "NEAR"
+   ]
+  },
+  "phrase": "चौक के पास",
+  "heard": "चौक के पास।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "anchor": [
+    "HOSPITAL"
+   ],
+   "relation": [
+    "BEHIND"
+   ],
+   "colour": [
+    "BLACK"
+   ],
+   "target": [
+    "DOOR"
+   ]
+  },
+  "phrase": "अस्पताल के पीछे काला दरवाजा",
+  "heard": "अस्पताल के पीछे काला दरवाजा।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "anchor": [
+    "BRIDGE"
+   ],
+   "relation": [
+    "BELOW"
+   ]
+  },
+  "phrase": "पुल के नीचे",
+  "heard": "पुल के नीचे",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Nalini",
+  "meaning": {
+   "anchor": [
+    "HANUMAN",
+    "TEMPLE"
+   ],
+   "relation": [
+    "FRONT"
+   ],
+   "colour": [
+    "GREEN"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "हनुमान मंदिर के सामने हरा गेट",
+  "heard": "हनुमान मंदिर के सामने हरा गेट",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "hi-IN",
+  "voice": "Deepak",
+  "meaning": {
+   "anchor": [
+    "PETROL_PUMP"
+   ],
+   "relation": [
+    "NEAR"
+   ],
+   "colour": [
+    "PINK"
+   ],
+   "target": [
+    "SHOP"
+   ]
+  },
+  "phrase": "पेट्रोल पंप के पास गुलाबी दुकान",
+  "heard": "पेट्रोल पंप के पास गुलाबी दुकान।",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "side": [
+    "RIGHT"
+   ],
+   "ordinal": [
+    "2"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "ಬಲಗಡೆಯ ಎರಡನೇ ಗೇಟ್",
+  "heard": "ಬಲಗಡೆಯ ಎರಡನೇ ಗೇಟ್",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "anchor": [
+    "TEMPLE"
+   ],
+   "relation": [
+    "BEHIND"
+   ],
+   "colour": [
+    "BLUE"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "ದೇವಸ್ಥಾನದ ಹಿಂದಿನ ನೀಲಿ ಗೇಟ್",
+  "heard": "ದೇವಸ್ಥಾನದ ಹಿಂದಿನ ನೀಲಿ ಗೇಟ್",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "anchor": [
+    "TANK"
+   ],
+   "relation": [
+    "NEAR"
+   ],
+   "colour": [
+    "YELLOW"
+   ],
+   "target": [
+    "HOUSE"
+   ]
+  },
+  "phrase": "ಟ್ಯಾಂಕಿನ ಹತ್ತಿರದ ಹಳದಿ ಮನೆ",
+  "heard": "ಟ್ಯಾಂಕಿನ ಹತ್ತಿರದ ಹಳದಿ ಮನೆ",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "ordinal": [
+    "3"
+   ],
+   "colour": [
+    "GREEN"
+   ],
+   "target": [
+    "LANE",
+    "HOUSE"
+   ]
+  },
+  "phrase": "ಮೂರನೇ ಗಲ್ಲಿಯ ಹಸಿರು ಮನೆ",
+  "heard": "ಮೂರನೇ ಗಲ್ಲಿಯ ಹಸಿರು ಮನೆ",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "side": [
+    "LEFT"
+   ],
+   "ordinal": [
+    "1"
+   ],
+   "target": [
+    "SHOP"
+   ]
+  },
+  "phrase": "ಎಡಗಡೆಯ ಮೊದಲನೇ ಅಂಗಡಿ",
+  "heard": "ಎಡಗಡೆಯ ಮೊದಲನೇ ಅಂಗಡಿ",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "anchor": [
+    "SCHOOL"
+   ],
+   "relation": [
+    "FRONT"
+   ]
+  },
+  "phrase": "ಶಾಲೆಯ ಎದುರು",
+  "heard": "ಶಾಲೆಯ ಎದುರು",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "anchor": [
+    "TREE"
+   ],
+   "relation": [
+    "BELOW"
+   ]
+  },
+  "phrase": "ಮರದ ಕೆಳಗೆ",
+  "heard": "ಮರದ ಕೆಳಗೆ",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "anchor": [
+    "BANK"
+   ],
+   "relation": [
+    "ABOVE"
+   ],
+   "colour": [
+    "WHITE"
+   ],
+   "target": [
+    "HOUSE"
+   ]
+  },
+  "phrase": "ಬ್ಯಾಂಕಿನ ಮೇಲಿನ ಬಿಳಿ ಮನೆ",
+  "heard": "ಬ್ಯಾಂಕಿನ ಮೇಲಿನ ಬಿಳಿ ಮನೆ",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "anchor": [
+    "MOSQUE"
+   ],
+   "relation": [
+    "AFTER"
+   ],
+   "colour": [
+    "RED"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "ಮಸೀದಿಯ ನಂತರದ ಕೆಂಪು ಗೇಟ್",
+  "heard": "ಮಸೀದಿಯ ನಂತರದ ಕೆಂಪು ಗೇಟ್",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "anchor": [
+    "CHOWK"
+   ],
+   "relation": [
+    "NEAR"
+   ]
+  },
+  "phrase": "ಸರ್ಕಲ್‌ನ ಹತ್ತಿರ",
+  "heard": "ಸರ್ಕಲ್ನ ಹತ್ತಿರ",
+  "exact_text": false,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "anchor": [
+    "HOSPITAL"
+   ],
+   "relation": [
+    "BEHIND"
+   ],
+   "colour": [
+    "BLACK"
+   ],
+   "target": [
+    "DOOR"
+   ]
+  },
+  "phrase": "ಆಸ್ಪತ್ರೆಯ ಹಿಂದಿನ ಕಪ್ಪು ಬಾಗಿಲು",
+  "heard": "ಆಸ್ಪತ್ರೆಯ ಹಿಂದಿನ ಕಪ್ಪು ಬಾಗಿಲು",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "anchor": [
+    "BRIDGE"
+   ],
+   "relation": [
+    "BELOW"
+   ]
+  },
+  "phrase": "ಸೇತುವೆಯ ಕೆಳಗೆ",
+  "heard": "ಸೇತುವೆಯ ಕೆಳಗೆ",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Kavin",
+  "meaning": {
+   "anchor": [
+    "HANUMAN",
+    "TEMPLE"
+   ],
+   "relation": [
+    "FRONT"
+   ],
+   "colour": [
+    "GREEN"
+   ],
+   "target": [
+    "GATE"
+   ]
+  },
+  "phrase": "ಹನುಮಾನ್ ದೇವಸ್ಥಾನದ ಎದುರಿನ ಹಸಿರು ಗೇಟ್",
+  "heard": "ಹನುಮಾನ್ ದೇವಸ್ಥಾನದ ಎದುರಿನ ಹಸಿರು ಗೇಟ್",
+  "exact_text": true,
+  "same_meaning": true
+ },
+ {
+  "lang": "kn-IN",
+  "voice": "Saanvi",
+  "meaning": {
+   "anchor": [
+    "PETROL_PUMP"
+   ],
+   "relation": [
+    "NEAR"
+   ],
+   "colour": [
+    "PINK"
+   ],
+   "target": [
+    "SHOP"
+   ]
+  },
+  "phrase": "ಪೆಟ್ರೋಲ್ ಬಂಕ್‌ನ ಹತ್ತಿರದ ಗುಲಾಬಿ ಅಂಗಡಿ",
+  "heard": "ಪೆಟ್ರೋಲ್ ಬಂಕ್ ನ ಹತ್ತಿರದ ಗುಲಾಬಿ ಅಂಗಡಿ",
+  "exact_text": false,
+  "same_meaning": true
+ }
+]

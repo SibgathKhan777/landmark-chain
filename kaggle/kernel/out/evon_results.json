@@ -1,0 +1,421 @@
+{
+ "model_file": "gnani-evon-v3.3-30B-A3B-Q5_K_M.gguf",
+ "summary": {
+  "English": {
+   "median_s": 0.61,
+   "max_s": 1.93,
+   "with_flags": 0,
+   "of": 18
+  },
+  "Kannada_direct": {
+   "median_s": 0.66,
+   "max_s": 1.91,
+   "with_flags": 0,
+   "of": 18
+  },
+  "Kannada_via_English": {
+   "median_s": 1.3,
+   "max_s": 3.77,
+   "with_flags": 0,
+   "of": 18
+  }
+ },
+ "results": [
+  {
+   "said": "सामने बिल्डिंग नंबर सिक्स सेवन नाइन है मेरा और आप सीधे देखो ब्लू कलर का बंदा दिखेगा ब्लू कलर का टी शर्ट दिखेगा वहाँ पे आ जाना",
+   "new_pattern": false,
+   "English": {
+    "text": "The building number is six seven nine in front. Look straight, you'll see a man wearing blue color shirt; come there.",
+    "seconds": 1.93,
+    "tokens": 27,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಮುಂದೆ ಕಟ್ಟಡ ಸಂಖ್ಯೆ 679 ಇದೆ, ನನ್ನದು. ನೀಲಿ ಬಣ್ಣದ ಅಂಗಿ ಧರಿಸಿರುವ ವ್ಯಕ್ತಿಯನ್ನು ನೇರವಾಗಿ ನೋಡಿ ಅಲ್ಲಿ ಬನ್ನಿ.",
+    "seconds": 1.91,
+    "tokens": 29,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಕಟ್ಟಡ ಸಂಖ್ಯೆ ಆರು ಏಳು ಒಂಬತ್ತು ಮುಂದೆ ಇದೆ. ನೇರವಾಗಿ ನೋಡಿ, ನೀಲಿ ಬಣ್ಣದ ಅಂಗಿ ಧರಿಸಿರುವ ವ್ಯಕ್ತಿಯನ್ನು ಕಾಣುತ್ತೀರಿ; ಅಲ್ಲಿಗೆ ಬನ್ನಿ.",
+    "seconds": 3.77,
+    "tokens": 32,
+    "flags": []
+   }
+  },
+  {
+   "said": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+   "new_pattern": false,
+   "English": {
+    "text": "Brother, come straight and take the right turn. Then you'll see a building ahead; stay there until I arrive.",
+    "seconds": 0.94,
+    "tokens": 26,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಭಯ್ಯಾ, ನೇರವಾಗಿ ಬನ್ನಿ ಮತ್ತು ಬಲಕ್ಕೆ ತಿರುಗಿ. ನಂತರ ಎದುರಿಗೆ ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ ಅಲ್ಲಿ ನಿಲ್ಸಿ ನಾನು ಬರುತ್ತಿದ್ದೇನೆ.",
+    "seconds": 0.96,
+    "tokens": 27,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಅಣ್ಣಾ, ನೇರವಾಗಿ ಬನ್ನಿ ಮತ್ತು ಬಲಕ್ಕೆ ತಿರುಗಿ. ನಂತರ ಮುಂದೆ ಒಂದು ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ; ನಾನು ಬರುವವರೆಗೆ ಅಲ್ಲಿಯೇ ಇರಿ.",
+    "seconds": 1.91,
+    "tokens": 29,
+    "flags": []
+   }
+  },
+  {
+   "said": "भैया चाय पीकर आना",
+   "new_pattern": false,
+   "English": {
+    "text": "Brother, come back after drinking tea.",
+    "seconds": 0.6,
+    "tokens": 10,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.",
+    "seconds": 0.67,
+    "tokens": 12,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಅಣ್ಣಾ, ಚಹಾ ಕುಡಿದ ನಂತರ ಹಿಂತಿರುಗಿ ಬನ್ನಿ.",
+    "seconds": 1.36,
+    "tokens": 18,
+    "flags": []
+   }
+  },
+  {
+   "said": "building dikhne par right le lo",
+   "new_pattern": false,
+   "English": {
+    "text": "When you see the building, turn right.",
+    "seconds": 0.61,
+    "tokens": 10,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+    "seconds": 0.62,
+    "tokens": 10,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+    "seconds": 1.25,
+    "tokens": 10,
+    "flags": []
+   }
+  },
+  {
+   "said": "agar building dikhe to wahan ruko",
+   "new_pattern": false,
+   "English": {
+    "text": "If you see a building, then stop there.",
+    "seconds": 0.65,
+    "tokens": 11,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಕಟ್ಟಡ ಕಾಣಿಸಿದಾಗ ಅಲ್ಲಿ ನಿಲ್ಲಿ.",
+    "seconds": 0.6,
+    "tokens": 9,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ನೀವು ಒಂದು ಕಟ್ಟಡವನ್ನು ನೋಡಿದರೆ, ಅಲ್ಲಿ ನಿಲ್ಲಿ.",
+    "seconds": 1.31,
+    "tokens": 11,
+    "flags": []
+   }
+  },
+  {
+   "said": "driver seedha aa raha hai",
+   "new_pattern": false,
+   "English": {
+    "text": "The driver is coming straight.",
+    "seconds": 0.56,
+    "tokens": 7,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಚಾಲಕ ನೇರವಾಗಿ ಬರುತ್ತಿದ್ದಾನೆ.",
+    "seconds": 0.59,
+    "tokens": 8,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಚಾಲಕನು ನೇರವಾಗಿ ಬರುತ್ತಿದ್ದಾನೆ.",
+    "seconds": 1.17,
+    "tokens": 9,
+    "flags": []
+   }
+  },
+  {
+   "said": "क्या मैं सीधे आ जाऊं",
+   "new_pattern": false,
+   "English": {
+    "text": "Can I come straight?",
+    "seconds": 0.55,
+    "tokens": 6,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ನೇರವಾಗಿ ಬರಬಹುದೇ?",
+    "seconds": 0.59,
+    "tokens": 8,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ನೇರವಾಗಿ ಬರಬಹುದೇ?",
+    "seconds": 1.13,
+    "tokens": 8,
+    "flags": []
+   }
+  },
+  {
+   "said": "right mat lena seedha aao",
+   "new_pattern": false,
+   "English": {
+    "text": "Turn right no, come straight.",
+    "seconds": 0.61,
+    "tokens": 8,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಬಲಕ್ಕೆ ತಿರುಗಿ ಬೇಡ, ನೇರವಾಗಿ ಬನ್ನಿ.",
+    "seconds": 0.67,
+    "tokens": 11,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಬಲಕ್ಕೆ ತಿರುಗಬೇಡ, ನೇರವಾಗಿ ಬನ್ನಿ.",
+    "seconds": 1.27,
+    "tokens": 11,
+    "flags": []
+   }
+  },
+  {
+   "said": "दो गली बाद राइट ले लो",
+   "new_pattern": false,
+   "English": {
+    "text": "Turn right after two lanes.",
+    "seconds": 0.56,
+    "tokens": 7,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಎರಡು ಗಲ್ಲಿಯ ನಂತರ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+    "seconds": 0.65,
+    "tokens": 12,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಎರಡು ಲೇನ್‌ಗಳ ನಂತರ ಬಲಕ್ಕೆ ತಿರುಗಿ.",
+    "seconds": 1.22,
+    "tokens": 13,
+    "flags": []
+   }
+  },
+  {
+   "said": "आप वहाँ वेट कीजिए मैं फाइव मिनट में आ रहा हूँ",
+   "new_pattern": false,
+   "English": {
+    "text": "You wait there; I'll be back in five minutes.",
+    "seconds": 0.69,
+    "tokens": 13,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ನೀವು ಅಲ್ಲಿ ಕಾಯಿರಿ ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತೇನೆ.",
+    "seconds": 0.68,
+    "tokens": 12,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ನೀವು ಅಲ್ಲಿಯೇ ಕಾಯಿರಿ; ನಾನು ಐದು ನಿಮಿಷಗಳಲ್ಲಿ ಬರುತ್ತೇನೆ.",
+    "seconds": 1.39,
+    "tokens": 14,
+    "flags": []
+   }
+  },
+  {
+   "said": "bhaiya second gate right side wala, uske upar blue board hai",
+   "new_pattern": false,
+   "English": {
+    "text": "Brother, the one on the left at the second gate has a blue board above it.",
+    "seconds": 0.82,
+    "tokens": 20,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಅಣ್ಣಾ ಎರಡನೇ ಗೇಟ್ ಬಲಬದಿಯಲ್ಲಿದೆ, ಅದರ ಮೇಲೆ ನೀಲಿ ಬೋರ್ಡ್ ಇದೆ.",
+    "seconds": 0.83,
+    "tokens": 21,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಅಣ್ಣಾ, ಎಡಕ್ಕೆ ಇರುವ ಎರಡನೇ ಗೇಟ್‌ನಲ್ಲಿ ನೀಲಿ ಬೋರ್ಡ್ ಇದೆ.",
+    "seconds": 1.6,
+    "tokens": 18,
+    "flags": []
+   }
+  },
+  {
+   "said": "ye mera number nahi hai, dusra number try karo",
+   "new_pattern": false,
+   "English": {
+    "text": "This is not my number; try another one.",
+    "seconds": 0.64,
+    "tokens": 11,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಇದು ನನ್ನ ಸಂಖ್ಯೆ ಅಲ್ಲ, ಇನ್ನೊಂದು ಸಂಖ್ಯೆಯನ್ನು ಪ್ರಯತ್ನಿಸಿ.",
+    "seconds": 0.66,
+    "tokens": 12,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಇದು ನನ್ನ ಸಂಖ್ಯೆ ಅಲ್ಲ; ಇನ್ನೊಂದು ಪ್ರಯತ್ನಿಸಿ.",
+    "seconds": 1.27,
+    "tokens": 10,
+    "flags": []
+   }
+  },
+  {
+   "said": "jab tak gate na dikhe seedha aao",
+   "new_pattern": true,
+   "English": {
+    "text": "Come straight until you see the gate.",
+    "seconds": 0.62,
+    "tokens": 9,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಗೇಟ್ ಕಾಣುವವರೆಗೆ ನೇರವಾಗಿ ಬನ್ನಿ.",
+    "seconds": 0.66,
+    "tokens": 10,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ನೇರವಾಗಿ ಬನ್ನಿ ಗೇಟ್ ಕಾಣುವವರೆಗೆ.",
+    "seconds": 1.3,
+    "tokens": 12,
+    "flags": []
+   }
+  },
+  {
+   "said": "left mat lo seedha jao",
+   "new_pattern": true,
+   "English": {
+    "text": "Turn left no, go straight.",
+    "seconds": 0.59,
+    "tokens": 8,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಎಡಕ್ಕೆ ತಿರುಗಬೇಡ, ನೇರವಾಗಿ ಹೋಗು.",
+    "seconds": 0.67,
+    "tokens": 12,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಎಡಕ್ಕೆ ತಿರುಗಬೇಡ, ನೇರವಾಗಿ ಹೋಗು.",
+    "seconds": 1.26,
+    "tokens": 12,
+    "flags": []
+   }
+  },
+  {
+   "said": "kya yahan ruk jaun",
+   "new_pattern": true,
+   "English": {
+    "text": "Shall I stop here?",
+    "seconds": 0.57,
+    "tokens": 7,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಈ ಸ್ಥಳದಲ್ಲಿ ನಾನು ನಿಲ್ಬೇಕು ಅಂತೀರಾ?",
+    "seconds": 0.64,
+    "tokens": 11,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ನಾನು ಇಲ್ಲಿಗೆ ನಿಲ್ಬೇಕಾ?",
+    "seconds": 1.16,
+    "tokens": 9,
+    "flags": []
+   }
+  },
+  {
+   "said": "do gali baad building ke samne ruko",
+   "new_pattern": true,
+   "English": {
+    "text": "Stop at the building after that lane.",
+    "seconds": 0.61,
+    "tokens": 9,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಗಲ್ಲಿಯ ನಂತರದ ಕಟ್ಟಡದ ಎದುರು ನಿಲ್ಲಿ.",
+    "seconds": 0.66,
+    "tokens": 12,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಅದರ ನಂತರದ ಲೇನ್‌ನಲ್ಲಿರುವ ಕಟ್ಟಡದಲ್ಲಿ ನಿಲುಗಡೆ ಮಾಡಿ.",
+    "seconds": 1.32,
+    "tokens": 16,
+    "flags": []
+   }
+  },
+  {
+   "said": "wo banda blue shirt mein hai",
+   "new_pattern": true,
+   "English": {
+    "text": "That guy in the blue shirt is there.",
+    "seconds": 0.59,
+    "tokens": 10,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಅವನು ನೀಲಿ ಅಂಗಿ ಧರಿಸಿದ್ದಾನೆ.",
+    "seconds": 0.59,
+    "tokens": 10,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ನೀಲಿ ಅಂಗಿಯವನು ಅಲ್ಲಿ ಇದ್ದಾನೆ.",
+    "seconds": 1.19,
+    "tokens": 10,
+    "flags": []
+   }
+  },
+  {
+   "said": "bhaiya bahut traffic hai thoda late ho jaunga",
+   "new_pattern": true,
+   "English": {
+    "text": "Brother, there is a lot of traffic; I will be slightly delayed.",
+    "seconds": 0.76,
+    "tokens": 17,
+    "flags": []
+   },
+   "Kannada_direct": {
+    "text": "ಅಣ್ಣಾ ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ ತಡವಾಗುತ್ತೇನೆ.",
+    "seconds": 0.7,
+    "tokens": 13,
+    "flags": []
+   },
+   "Kannada_via_English": {
+    "text": "ಅಣ್ಣಾ, ತುಂಬಾ ಟ್ರಾಫಿಕ್ ಇದೆ; ನಾನು ಸ್ವಲ್ಪ ತಡವಾಗುತ್ತೇನೆ.",
+    "seconds": 1.54,
+    "tokens": 17,
+    "flags": []
+   }
+  }
+ ]
+}

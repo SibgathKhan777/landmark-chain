@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live call interpreter</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main class="stage">
+  <header class="top">
+    <div>
+      <h1>Live call interpreter</h1>
+      <p>A customer calls a biker, each speaking their own language (Hindi and Kannada, or English and Hindi). Each window only ever receives its own language, or English.</p>
+    </div>
+    <div class="badges" aria-label="What is real">
+      <span class="badge real">Gnani Prisma + Timbre, live</span>
+      <span class="badge" id="rules-badge">rule-based, no LLM</span>
+      <span class="badge">synthetic voices</span>
+      <span class="badge" id="noise-badge">simulated noise</span>
+    </div>
+  </header>
+
+  <div class="arena">
+    <div id="w-customer"></div>
+    <aside class="centre" aria-label="Interpreter">
+      <h3>Interpreter</h3>
+      <p class="hint">Not heard by either caller. This is what happens between the two windows.</p>
+      <div id="centre" class="empty">Press <b>Play scripted call</b>, or call from the Customer window.</div>
+    </aside>
+    <div id="w-biker"></div>
+  </div>
+
+  <div class="bar">
+    <button class="btn go" id="play">Play scripted call</button>
+    <button class="btn" id="play-en" title="The customer speaks English and the biker speaks Hindi. Rules only, no AI needed.">Play English–Hindi call</button>
+    <button class="btn" id="play-real" hidden title="A longer, more natural delivery call. It needs the AI fallback, because most of its lines are casual talk.">Play realistic call (AI)</button>
+    <button class="btn stop" id="stop" disabled>End call</button>
+    <div class="grow" id="summary">Scripted call: synthetic Timbre voices with simulated noise. Every translation runs live through Prisma, the rules and Timbre; nothing in the pipeline is cached.</div>
+  </div>
+
+  <div class="wrap">
+    <table class="log" aria-label="Turn log">
+      <thead><tr><th>#</th><th>From</th><th>Prisma heard</th><th>Meaning, in English</th><th>Result</th><th>Ready after</th></tr></thead>
+      <tbody id="log"><tr><td colspan="6" style="color:var(--muted)">No turns yet.</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="foot">
+    <div><b>Utterance level, not streaming.</b> The translation starts when the speaker stops talking. "Ready after" is measured on this machine, from the end of the utterance to the translated audio being ready.</div>
+    <div id="ai-note" hidden><b>AI fallback is on</b> (if the badge says RECORDED, the AI answers are played back from an earlier real run, not asked live). When the rules cannot translate a whole sentence, an AI model (Gnani Evon, self-hosted) is asked. Its answer is spoken only if a fixed check finds that left/right, negation, question, condition, colours, numbers, and who is standing, coming or &ldquo;where&rdquo; match what was said; those turns are labelled <i>AI translated</i>. The check does not cover the rest of the meaning, so the AI can still be wrong, and the Kannada has not been reviewed by a native speaker.</div>
+    <div><b>It translates only what its tables know:</b> landmarks, a few directions and plans, yes/no, found it. Everything else is refused out loud. Kannada wording has not been reviewed by a native speaker.</div>
+    <div>Hold-to-speak sends <i>your</i> voice to Gnani's API. The contest asks for synthetic data only, so use the scripted call for the video.</div>
+  </div>
+</main>
+
+<script src="/app.js"></script>
+<script>
+  mountPhone(document.getElementById("w-customer"), "customer");
+  mountPhone(document.getElementById("w-biker"), "biker");
+
+  const $ = (id) => document.getElementById(id);
+  const centre = $("centre"), log = $("log"), playBtn = $("play"), realBtn = $("play-real"), enBtn = $("play-en"), stopBtn = $("stop"), summary = $("summary");
+  const lang = { "hi-IN": "Hindi", "kn-IN": "Kannada", en: "English" };
+  const who = { customer: "Arun (customer)", biker: "Manju (rider)" };
+  const sec = (ms) => (ms / 1000).toFixed(2) + " s";
+  const T = (txt) => document.createTextNode(txt);
+  const row = (k, v, small) => { const d = document.createElement("div"); const kk = document.createElement("div"), vv = document.createElement("div"); kk.className = "k"; vv.className = "v" + (small ? " small" : ""); kk.textContent = k; vv.textContent = v; d.append(kk, vv); return d; };
+  const stageBox = (name, val, act) => { const d = document.createElement("div"); d.className = "stagebox" + (act ? " act" : ""); const a = document.createElement("span"), b = document.createElement("b"); a.textContent = name; b.textContent = val; d.append(a, b); return d; };
+  const resultText = { translated: "translated", partial: "partly translated", untranslated: "refused, said out loud", silent: "heard nothing", ai: "AI translated, not fully checked", ai_unchecked: "AI translated, NOT checked" };
+  let turns = [];
+
+  function showSpeaking(ev) {
+    centre.className = ""; centre.replaceChildren();
+    const p = document.createElement("div"); p.className = "pipe";
+    p.append(stageBox(`${who[ev.who]} is speaking`, "…", true), stageBox("Prisma · speech to text", "waiting"), stageBox("Rules · translation", "waiting"), stageBox("Timbre · text to speech", "waiting"));
+    centre.append(p);
+  }
+  function showTurn(t) {
+    centre.className = "kv"; centre.replaceChildren();
+    const big = document.createElement("div"); big.className = "big"; big.append(T(sec(t.ms.total))); const sm = document.createElement("small"); sm.textContent = "after they stopped speaking"; big.append(sm);
+    const p = document.createElement("div"); p.className = "pipe";
+    p.append(stageBox("Prisma · speech to text", sec(t.ms.stt)), stageBox("Rules · translation", t.ms.rules < 1 ? "<1 ms" : t.ms.rules + " ms"),
+      ...(t.ms.llm != null ? [stageBox("AI fallback · asked after the rules", sec(t.ms.llm))] : []), stageBox("Timbre · text to speech", sec(t.ms.tts)));
+    centre.append(big, p,
+      row(`${who[t.who]} said (Prisma, ${lang[t.src]})`, t.heard || "(nothing)"),
+      row("Meaning in English", t.english || (t.status === "untranslated" ? "(refused)" : "—")),
+      row(`${who[t.listener]} received (${lang[t.dst]})`, t.output || (t.speaks.length ? t.speaks.map((s) => s.text).join(" ") : "(nothing)")),
+      row("Result", resultText[t.status] + (t.reason_text && t.status !== "translated" ? ": " + t.reason_text : "")));
+    if (t.source === "mic" && t.audio_level) {
+      const L = t.audio_level, tip = L.peak_pct < 10 ? " Very quiet: speak closer to the microphone or raise the input volume." : L.clipped_pct > 0.5 ? " Clipping: move back or lower the input volume." : "";
+      centre.append(row("Your recording", `${t.audio_s} s long, peak ${L.peak_pct}% of full scale, speech about ${L.rms_dbfs} dBFS, ${L.clipped_pct}% clipped.${tip}`, true));
+    }
+    if (t.untranslated && t.untranslated.length) centre.append(row("Not understood", t.untranslated.join(" · "), true));
+    if (t.ai) {
+      const a = t.ai, secs2 = (a.seconds != null ? ` (${a.seconds} s)` : "");
+      centre.append(row(`${a.name} (AI fallback)${secs2}`,
+        a.status === "ok" && a.checked === false ? ("answered, and spoken with the check OFF." + (a.problems.length ? " The check would have rejected it: " + a.problems.join("; ") : " The check would have passed it.") + " Nothing here was verified.")
+        : a.status === "ok" ? "answered, and the check passed: left/right, negation, question, condition, colour, numbers, and who is standing, coming or 'where' match what was said. Used. NOT checked: everything else in the meaning, so a person should still confirm."
+        : a.status === "rejected" ? "answered, but the check failed, so the answer was NOT used: " + a.problems.join("; ")
+        : "no answer (" + (a.error || "error") + "); the rules' result stands", a.status !== "ok"));
+      if (a.replayed) centre.append(row("Recorded answer", "This AI answer was recorded in an earlier real run and is being played back. The model was not asked just now.", true));
+    }
+    if (t.clauses && t.clauses.length) centre.append(row("Directions and plans recognised", t.clauses.join(" · "), true));
+  }
+  function addLog(t) {
+    if (!turns.length) log.replaceChildren();
+    turns.push(t);
+    const tr = document.createElement("tr");
+    const cells = [t.n, who[t.who] + " (" + lang[t.src] + ")", t.heard || "(nothing)", t.english || "—", null, sec(t.ms.total)];
+    cells.forEach((c, i) => { const td = document.createElement("td"); if (i === 4) { const s = document.createElement("span"); s.className = "chip " + t.status; s.textContent = resultText[t.status]; td.append(s); } else td.textContent = c; if (i === 0 || i === 5) td.className = "tn"; tr.append(td); });
+    log.append(tr);
+    const ms = turns.map((x) => x.ms.total).sort((a, b) => a - b);
+    summary.textContent = `${turns.length} turn${turns.length > 1 ? "s" : ""} · ready after: median ${sec(ms[Math.floor(ms.length / 2)])}, fastest ${sec(ms[0])}, slowest ${sec(ms[ms.length - 1])} · Prisma and Timbre called over REST on this machine`;
+  }
+
+  const es = new EventSource("/api/events?role=stage");
+  es.onmessage = (m) => {
+    const ev = JSON.parse(m.data);
+    if (ev.type === "snapshot") {
+      realBtn.hidden = !(ev.llm && ev.llm.enabled);
+      if (ev.llm && ev.llm.enabled) { $("rules-badge").textContent = ev.llm.replay ? `rules first, then AI fallback: RECORDED answers, not live (${ev.llm.name})` : ev.llm.guard ? `rules first, then AI fallback (${ev.llm.name}), checked` : `rules first, then AI fallback (${ev.llm.name}), CHECK OFF`; $("ai-note").hidden = false; }
+      if (ev.biker_snr != null) $("noise-badge").textContent = `simulated noise: phone line 20 dB, bike ${ev.biker_snr} dB`;
+      playBtn.disabled = realBtn.disabled = enBtn.disabled = ev.script_running; stopBtn.disabled = !["ringing", "connected"].includes(ev.state);
+      if (ev.history && ev.history.length && !turns.length) { ev.history.forEach(addLog); showTurn(ev.history[ev.history.length - 1]); }
+    } else if (ev.type === "call") {
+      stopBtn.disabled = !["ringing", "connected"].includes(ev.state); playBtn.disabled = realBtn.disabled = enBtn.disabled = ev.script_running && ev.state !== "ended";
+      if (ev.state === "ringing") { turns = []; log.innerHTML = '<tr><td colspan="6" style="color:var(--muted)">No turns yet.</td></tr>'; centre.className = "empty"; centre.textContent = "Ringing…"; }
+      if (ev.state === "ended") { playBtn.disabled = realBtn.disabled = enBtn.disabled = false; }
+    } else if (ev.type === "speaking") showSpeaking(ev);
+    else if (ev.type === "turn") { showTurn(ev); addLog(ev); }
+    else if (ev.type === "error") { summary.textContent = "Error: " + ev.message; }
+  };
+  const play = (script) => { playBtn.disabled = realBtn.disabled = enBtn.disabled = true; fetch("/api/play", { method: "POST", body: JSON.stringify({ script }) }).then((r) => { if (!r.ok) playBtn.disabled = realBtn.disabled = enBtn.disabled = false; }); };
+  playBtn.onclick = () => play("default");
+  realBtn.onclick = () => play("real");
+  enBtn.onclick = () => play("english");
+  stopBtn.onclick = () => fetch("/api/stop", { method: "POST", body: "{}" });
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+[
+  {
+    "test": "1 timbre hindi tts",
+    "status": "ok",
+    "seconds": 0.6,
+    "result": "1.8s audio at 16000 Hz"
+  },
+  {
+    "test": "2 prisma hindi clean (verbatim)",
+    "status": "ok",
+    "seconds": 0.4,
+    "result": "expected: मंदिर के पीछे नीला गेट | got: मंदिर के पीछे नीला गेट"
+  },
+  {
+    "test": "3 prisma hindi clean (transcribe)",
+    "status": "ok",
+    "seconds": 0.2,
+    "result": "got: मंदिर के पीछे नीला गेट"
+  },
+  {
+    "test": "4 prisma hindi 8kHz + noise 10 dB",
+    "status": "ok",
+    "seconds": 0.1,
+    "result": "expected: मंदिर के पीछे नीला गेट | got: मंदिर के पीछे नीला गेट"
+  },
+  {
+    "test": "5 prisma hindi 8kHz + noise 0 dB",
+    "status": "ok",
+    "seconds": 0.3,
+    "result": "expected: मंदिर के पीछे नीला गेट | got: मंदिर के पीछे महिला"
+  },
+  {
+    "test": "6 numbers: sava do lakh rupaye",
+    "status": "ok",
+    "seconds": 0.8,
+    "result": "said: सवा दो लाख रुपये | verbatim: सवा दो लाख रुपए। | transcribe: सवा 2,00,000 रुपए।"
+  },
+  {
+    "test": "7 numbers: dedh sau",
+    "status": "ok",
+    "seconds": 0.6,
+    "result": "said: डेढ़ सौ | verbatim: डेढ़ सौ | transcribe: डेढ़ 100"
+  },
+  {
+    "test": "8 numbers: pachpan",
+    "status": "ok",
+    "seconds": 0.6,
+    "result": "said: पचपन | verbatim: पचपन | transcribe: 55"
+  },
+  {
+    "test": "9 numbers: pachees",
+    "status": "ok",
+    "seconds": 0.7,
+    "result": "said: पच्चीस | verbatim: पच्चीस | transcribe: 25"
+  },
+  {
+    "test": "10 timbre marathi tts",
+    "status": "ok",
+    "seconds": 0.3,
+    "result": "1.6s audio at 16000 Hz"
+  },
+  {
+    "test": "11 prisma marathi",
+    "status": "ok",
+    "seconds": 0.4,
+    "result": "expected: देवळाच्या मागे निळे गेट | got: देवळाच्या मागे निळे गेट"
+  },
+  {
+    "test": "12 timbre hinglish tts",
+    "status": "ok",
+    "seconds": 0.4,
+    "result": "1.9s audio at 16000 Hz"
+  },
+  {
+    "test": "13 prisma hinglish (en-IN)",
+    "status": "ok",
+    "seconds": 0.3,
+    "result": "expected: temple ke peeche blue gate | got: temple ke peeche blue gate"
+  }
+]

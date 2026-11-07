@@ -1,0 +1,207 @@
+{
+ "people": {
+  "customer": {
+   "lang": "hi-IN",
+   "voice": "Deepak",
+   "label": "Customer",
+   "language": "Hindi",
+   "line": "phone line, 20 dB noise"
+  },
+  "biker": {
+   "lang": "kn-IN",
+   "voice": "Kavin",
+   "label": "Biker",
+   "language": "Kannada",
+   "line": "bike noise, 5 dB"
+  }
+ },
+ "interpreter": {
+  "hi-IN": "Nalini",
+  "kn-IN": "Saanvi",
+  "en": "Yashvi"
+ },
+ "biker_snr": 5,
+ "turns": [
+  {
+   "n": 1,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "भैया सीधे आ जाओ राइट ले लो फिर सामने बिल्डिंग दिखेगी वहाँ ठहरो मैं आ रहा हूँ",
+   "status": "translated",
+   "output": "ನೇರವಾಗಿ ಬನ್ನಿ, ಬಲಕ್ಕೆ ತಿರುಗಿ, ಎದುರು ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ, ಅಲ್ಲಿ ನಿಲ್ಲಿ, ನಾನು ಬರುತ್ತಿದ್ದೇನೆ",
+   "english": "come straight, turn right, you will see a building ahead, wait there, I am coming",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "STRAIGHT",
+    "TURN",
+    "SEE_AHEAD",
+    "WAIT",
+    "COMING"
+   ],
+   "intents": [],
+   "rules_status": "translated",
+   "ai": null,
+   "speaks": [
+    {
+     "text": "ನೇರವಾಗಿ ಬನ್ನಿ, ಬಲಕ್ಕೆ ತಿರುಗಿ, ಎದುರು ಕಟ್ಟಡ ಕಾಣಿಸುತ್ತದೆ, ಅಲ್ಲಿ ನಿಲ್ಲಿ, ನಾನು ಬರುತ್ತಿದ್ದೇನೆ",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 5.76,
+   "ms": {
+    "stt": 336,
+    "rules": 0.85,
+    "tts": 859,
+    "total": 1197
+   },
+   "audio_s": 4.48
+  },
+  {
+   "n": 2,
+   "who": "biker",
+   "listener": "customer",
+   "source": "script",
+   "said": "ಕಟ್ಟಡ ಕಾಣಿಸಿತು",
+   "src": "kn-IN",
+   "dst": "hi-IN",
+   "heard": "ಕಟ್ಟಡ ಕಾಣಿಸಿ",
+   "status": "untranslated",
+   "output": "",
+   "english": "",
+   "reason": "no_known_words",
+   "reason_text": "none of the words are in the landmark list or the phrasebook",
+   "untranslated": [
+    "ಕಾಣಿಸಿ"
+   ],
+   "clauses": [],
+   "intents": [],
+   "rules_status": "untranslated",
+   "ai": null,
+   "speaks": [
+    {
+     "text": "सामने वाले की बात अनुवाद नहीं हो सकी।",
+     "lang": "hi-IN"
+    }
+   ],
+   "notices": [
+    {
+     "text": "ಇದನ್ನು ಅನುವಾದಿಸಲು ಆಗಲಿಲ್ಲ. ದಯವಿಟ್ಟು ಗುರುತನ್ನು ಹೇಳಿ.",
+     "lang": "kn-IN"
+    }
+   ],
+   "play_s": 2.88,
+   "ms": {
+    "stt": 184,
+    "rules": 0.56,
+    "tts": 1686,
+    "total": 1871
+   },
+   "audio_s": 1.28
+  },
+  {
+   "n": 3,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "भैया मैं पांच मिनट में आ रहा हूँ",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "भैया मैं पाँच मिनट में आ रहा हूँ।",
+   "status": "ai",
+   "output": "ಅಣ್ಣಾ ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತಿದ್ದೇನೆ.",
+   "english": "Brother, I'll be there in five minutes. (AI gloss, not checked)",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [
+    "COMING"
+   ],
+   "intents": [],
+   "rules_status": "partial",
+   "ai": {
+    "status": "ok",
+    "output": "ಅಣ್ಣಾ ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತಿದ್ದೇನೆ.",
+    "problems": [],
+    "seconds": 1.25,
+    "name": "Evon"
+   },
+   "speaks": [
+    {
+     "text": "ಅಣ್ಣಾ ನಾನು ಐದು ನಿಮಿಷದಲ್ಲಿ ಬರುತ್ತಿದ್ದೇನೆ.",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 2.4,
+   "ms": {
+    "stt": 198,
+    "rules": 1.25,
+    "tts": 580,
+    "total": 2024,
+    "llm": 1245
+   },
+   "audio_s": 1.6
+  },
+  {
+   "n": 4,
+   "who": "customer",
+   "listener": "biker",
+   "source": "script",
+   "said": "भैया चाय पीकर आना",
+   "src": "hi-IN",
+   "dst": "kn-IN",
+   "heard": "भैया चाय पीकर आना",
+   "status": "ai",
+   "output": "ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.",
+   "english": "Brother, come back after having tea. (AI gloss, not checked)",
+   "reason": "",
+   "reason_text": "",
+   "untranslated": [],
+   "clauses": [],
+   "intents": [],
+   "rules_status": "untranslated",
+   "ai": {
+    "status": "ok",
+    "output": "ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.",
+    "problems": [],
+    "seconds": 1.05,
+    "name": "Evon"
+   },
+   "speaks": [
+    {
+     "text": "ಅಣ್ಣಾ ಚಹಾ ಕುಡಿದು ಬನ್ನಿ.",
+     "lang": "kn-IN"
+    }
+   ],
+   "notices": [],
+   "play_s": 1.44,
+   "ms": {
+    "stt": 214,
+    "rules": 0.95,
+    "tts": 424,
+    "total": 1686,
+    "llm": 1047
+   },
+   "audio_s": 1.44
+  }
+ ],
+ "errors": [],
+ "latency": {
+  "turns": 4,
+  "median_ms": 1871,
+  "min_ms": 1197,
+  "max_ms": 2024
+ },
+ "calls": {
+  "tts": 5,
+  "stt": 4
+ },
+ "ai_fallback": true
+}
