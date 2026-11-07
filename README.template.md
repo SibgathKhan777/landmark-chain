@@ -3,7 +3,7 @@
 A voice interpreter and route memory for landmark-based addresses, built on Gnani AI's **Prisma** (speech to text) and **Timbre** (text to speech).
 An entry for the Great Indian AI Internship Challenge.
 
-**One-page solution pitch:** [PITCH.md](PITCH.md).
+**One-page solution pitch:** [PITCH.md](PITCH.md) ([PDF, one page](PITCH.pdf)).
 
 - **Live call interpreter:** two caller windows. A Hindi-speaking customer says "come straight, take a right, you will see a building ahead, wait there, I am coming"; the biker's window receives it only in Kannada (or English, their choice) and the reply returns in Hindi. It translates landmark phrases, a small closed set of directions and plans, and a few set phrases, and refuses out loud everything else.
 - **Route memory:** customers' descriptions are merged into one route per house, and a rider confirms each landmark by voice.

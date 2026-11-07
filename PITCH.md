@@ -1,44 +1,37 @@
 # Solution pitch: Landmark Chain
 
-**A prototype for the Great Indian AI Internship Challenge (Gnani AI).** Synthetic voices only. One page.
+**A live call interpreter for delivery riders and customers who do not share a language.** A prototype for the Great Indian AI Internship Challenge (Gnani AI). Synthetic voices only.
 
 ## The problem
 
-A delivery rider and a customer often do not share a language, and the address is often a landmark ("behind the temple, blue gate") given over a call, not a pin on a map. A rider who hears Hindi they do not follow, or a customer who hears Kannada they do not follow, loses minutes on a call that was meant to end the delivery. We did not measure how often this causes a failed delivery, so we make no such claim; this is a hypothesis from the problem's shape.
+Addresses are often given as landmarks ("behind the temple, blue gate") over a phone call, and the rider and the customer often speak different languages. The call that should end the delivery turns into minutes of "what does that mean?". (We did not measure how often this causes a failed delivery, so we make no such claim.)
 
 ## The solution
 
-A **live call interpreter** between two phone-style windows. The customer speaks Hindi or Hinglish (or English), the rider hears Kannada (or English), and the rider's reply comes back the same way. Each window only ever receives its own language.
+Each person has their own phone-style window. The customer speaks Hindi, Hinglish or English; the rider hears Kannada (or English) and replies in their own language. **Each window only ever receives its own language.**
 
 ```
-speaker's voice -> Gnani Prisma (speech to text) -> rules -> Gnani Timbre (text to speech) -> the other window only
+voice -> Gnani Prisma (speech to text) -> rules -> Gnani Timbre (text to speech) -> the other window only
 ```
 
-The **translation step is rule-based**: fixed tables for landmarks, colours, lane numbers, sides, yes/no, and a closed grammar of seven direction clauses ("come straight, take a right, you will see a building ahead, wait there, I am coming"). It does not guess. **Anything it cannot translate is refused out loud, in both languages**, so nobody is sent the wrong way by a plausible-sounding mistake.
+The translation step is **rule-based**: fixed tables for landmarks, colours, lane numbers, sides and yes/no, plus a closed grammar of seven direction clauses. It does not guess: **whatever it cannot translate, it says so out loud**, in both languages, so nobody is sent the wrong way by a plausible mistake. An optional AI fallback (Gnani's open-weight Evon) handles casual sentences, behind a fixed check, and every such turn is labelled on screen.
 
-An **optional AI fallback** (Gnani's open-weight Evon, self-hosted) can be asked when the rules refuse a casual sentence. Its answer is spoken only if a fixed check finds left/right, negation, questions, conditions, colours and numbers matching what was said, and every such turn is labelled on screen. It is off in the main demo.
+![The customer's Hindi directions arrive in the rider's window in Kannada](docs/images/call_directions.png)
+*A scripted call between synthetic voices. The customer's Hindi ("come straight, turn right, you will see a building ahead, wait there, I am coming") reaches the rider in Kannada 1.16 s after the speaker stopped. The middle panel is the operator view: each stage's time and the English meaning. The two lines labelled AI are recorded answers from the optional AI fallback.*
 
-## What was built and checked
+![The rider's Kannada reply arrives in the customer's window in Hindi](docs/images/call_reply.png)
+*The rider replies in Kannada ("I can see the building") and the customer hears it in Hindi, ready 0.83 s after the rider stopped speaking.*
 
-- Two caller windows, an operator view with timings, a scripted call, and a microphone mode (for your own voice, not for the contest video).
+## What was built
+
+- Two caller windows with an operator view, a scripted call, and a microphone mode.
 - Three language pairs through one pipeline: Hindi to Kannada, Kannada to Hindi, English to Hindi.
-- 79 Hinglish edge cases with the correct outcome written down first, enforced by tests.
-- The translated turn is ready about one to two seconds after the speaker stops. It is **not streaming**.
-- Every number in `README.md` and `SUBMISSION.md` is generated from the saved result files in `out/`, and a test fails if the documents drift from the data.
+- 79 Hinglish edge cases with the correct outcome written down first, enforced by tests; every number in the documents is generated from saved result files.
 
 ## Next steps
 
-- A native Kannada speaker reviews every Kannada string (`kannada_review.md` lists them all).
-- Trial with real riders and customers once real-data rules allow it.
-- Streaming translation, so the other person hears it while the speaker is still talking.
-- More directions and landmark types in the tables, and the optional AI fallback for casual sentences.
+A native Kannada speaker reviews every Kannada string; a trial with real riders and customers; streaming translation; more directions and landmark types.
 
 ## Run it
 
-```
-pip install -r requirements.txt        # then put GNANI_API_KEY in .env (see .env.example)
-python live_call.py                     # open http://127.0.0.1:8770/
-python -m unittest discover -s tests    # the tests
-```
-
-Details, results and the full list of Gnani models and APIs used: `README.md` and `SUBMISSION.md`.
+`pip install -r requirements.txt`, put `GNANI_API_KEY` in `.env`, then `python live_call.py` and open `http://127.0.0.1:8770/`. Details and all results: `README.md` and `SUBMISSION.md`.
